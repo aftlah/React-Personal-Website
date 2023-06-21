@@ -1,0 +1,2 @@
+- React JS
+- Tailwind CSS
