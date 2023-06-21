@@ -2,7 +2,7 @@ import React from 'react'
 
 const Home = () => {
     return (
-        <section className="container p-4  w-full h-[35rem] mx-auto mt-16">
+        <section className="container p-4  w-full h-[35rem] mx-auto mt-16 bg-cyan-800">
             <div className=' w-full h-full flex flex-row gap-10 items-center justify-center md:justify-start'>
                 <div className='flex h-[40%] flex-col gap-y-7 lg:ml-20 xl:ml-36 items-start justify-evenly '>
                     <a href="">
@@ -33,13 +33,13 @@ const Home = () => {
                     </a>
                 </div>
 
-                <div className='align-bottom'>
+                <div className='xl:ml-36 lg:ml-20 md:ml-16'>
                     <h1 className='md:text-5xl lg:text-6xl text-4xl font-bold'>Altaf Fattah Amanullah <span className='md:text-5xl'>🖐️</span></h1>
                     <div className='flex items-center gap-x-4 my-3 md:my-4 lg:my-6'>
                         <div className='h-[0.1rem] w-12 bg-slate-700'></div>
                         <p className='text-slate-700 font-medium md:text-lg lg:text-2xl'>Front-end Developer</p>
                     </div>
-                    <p className='text-slate-500 mb-6 md:text-md lg:text-lg'>Seorang bocah berumur 18 tahun yang ingin menjadi Front-end Developer</p>
+                    <p className='text-slate-500 mb-6 md:text-md lg:text-lg max-w-sm'>Seorang bocah berumur 18 tahun yang ingin menjadi Front-end Developer</p>
                     <button className='h-14 w-40 rounded-full bg-black font-medium text-white md:text-lg'>Kirim Pesan</button>
                 </div>
 
