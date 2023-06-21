@@ -1,6 +1,7 @@
 import React from "react"
 import Navbar from "./components/pages/navbar"
 import Home from "./components/pages/home"
+import About from "./components/pages/About"
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <>
     <Navbar />
     <Home />
+    <About/>
 
     </>
   )
