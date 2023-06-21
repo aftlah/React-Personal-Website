@@ -1,2 +1,2 @@
-React JS
-Tailwind CSS
+- React JS
+- Tailwind CSS
