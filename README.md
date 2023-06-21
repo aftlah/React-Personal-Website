@@ -1,1 +1,2 @@
-# React-Personal-Website
+React JS
+Tailwind CSS
