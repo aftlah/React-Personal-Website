@@ -15,7 +15,6 @@ function App() {
     <About/>
     <Skills />
     <Project />
-
     </>
   )
 }

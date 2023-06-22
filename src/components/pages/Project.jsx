@@ -11,7 +11,7 @@ const Project = () => {
 
                 <div className='flex flex-col flex-wrap justify-center items-start w-full py-4 mx-auto mt-10 bg-blue-700 gap-7 md:flex-row md:w-[100%] xl:w-[80%]  xl:gap-14'>
                     <div className='w-full bg-green-700 h-full rounded-2xl md:w-[26.4rem] mx-auto md:mx-0'>
-                        <div className='w-[90%] bg-white h-[17rem] mx-auto mt-5 rounded-2xl md:h-[15rem]'>
+                        <div className='w-[90%] bg-white h-[13rem] mx-auto mt-5 rounded-2xl md:h-[15rem]'>
                             <img src="" alt="" />
                         </div>
                         <div className='bg-cyan-600 w-[90%] mx-auto my-3'>
@@ -20,7 +20,7 @@ const Project = () => {
                         </div>
                     </div>
                     <div className='w-full bg-red-700 h-full rounded-2xl md:w-[26.4rem] mx-auto md:mx-0'>
-                        <div className='w-[90%] bg-white h-[17rem] mx-auto mt-5 rounded-2xl md:h-[15rem]'>
+                        <div className='w-[90%] bg-white h-[13rem] mx-auto mt-5 rounded-2xl md:h-[15rem]'>
                             <img src="" alt="" />
                         </div>
                         <div className='bg-cyan-600 w-[90%] mx-auto my-3'>
@@ -29,7 +29,7 @@ const Project = () => {
                         </div>
                     </div>
                     <div className='w-full bg-yellow-700 h-full rounded-2xl md:w-[26.4rem] mx-auto md:mx-0'>
-                        <div className='w-[90%] bg-white h-[17rem] mx-auto mt-5 rounded-2xl md:h-[15rem]'>
+                        <div className='w-[90%] bg-white h-[13rem] mx-auto mt-5 rounded-2xl md:h-[15rem]'>
                             <img src="" alt="" />
                         </div>
                         <div className='bg-cyan-600 w-[90%] mx-auto my-3'>
@@ -38,7 +38,7 @@ const Project = () => {
                         </div>
                     </div>
                     <div className='w-full bg-yellow-700 h-full rounded-2xl md:w-[26.4rem] mx-auto md:mx-0'>
-                        <div className='w-[90%] bg-white h-[17rem] mx-auto mt-5 rounded-2xl md:h-[15rem]'>
+                        <div className='w-[90%] bg-white h-[13rem] mx-auto mt-5 rounded-2xl md:h-[15rem]'>
                             <img src="" alt="" />
                         </div>
                         <div className='bg-cyan-600 w-[90%] mx-auto my-3'>
