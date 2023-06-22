@@ -40,7 +40,7 @@ const Home = () => {
                         <p className='text-slate-700 font-medium md:text-lg lg:text-2xl'>Front-end Developer</p>
                     </div>
                     <p className='text-slate-500 mb-6 md:text-md lg:text-lg max-w-sm'>Seorang bocah berumur 18 tahun yang ingin menjadi Front-end Developer</p>
-                    <button className='h-14 w-40 rounded-full bg-black font-medium text-white md:text-lg'>Kirim Pesan</button>
+                    <button className='h-14 w-44 rounded-full bg-black font-medium text-white md:text-lg'>Kirim Pesan</button>
                 </div>
 
             </div>
