@@ -1,12 +1,18 @@
 import React from 'react'
+import Aos from 'aos'
+    
 
-const Home = () => {
+
+const Home = ({id}) => {
+    Aos.init()
+
+   
     return (
-        <section className="container p-4  w-full h-[35rem] mx-auto mt-16 bg-cyan-800">
-            <div className=' w-full h-full flex flex-row gap-10 items-center justify-center md:justify-start'>
-                <div className='flex h-[40%] flex-col gap-y-7 lg:ml-20 xl:ml-36 items-start justify-evenly '>
-                    <a href="">
-                        <svg width="23" class="fill-current w-6" role="img" viewBox="0 0 24 24"
+        <section id={id} className="container p-4  w-full h-[35rem] mx-auto mt-16 bg-cyan-800">
+            <div  className='flex flex-row items-center justify-center w-full h-full gap-10 md:justify-start'>
+                <div data-aos-duration="500" data-aos="fade-up" className='flex h-[40%] flex-col lg:ml-20 xl:ml-36 items-start justify-start md:justify-evenly gap-y-8'>
+                    <a href="" >
+                        <svg class="fill-current w-[1.30rem] md:w-6" role="img" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
                             <title>GitHub</title>
                             <path
@@ -14,8 +20,8 @@ const Home = () => {
                         </svg>
                     </a>
 
-                    <a href="">
-                        <svg width="23" class="fill-current w-6" role="img" viewBox="0 0 24 24"
+                    <a href="" >
+                        <svg class="fill-current w-[1.30rem] md:w-6" role="img" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
                             <title>Instagram</title>
                             <path
@@ -23,8 +29,8 @@ const Home = () => {
                         </svg>
                     </a>
 
-                    <a href="">
-                        <svg width="23" class="fill-current w-6" role="img" viewBox="0 0 24 24"
+                    <a href="" >
+                        <svg class="fill-current w-[1.30rem] md:w-6" role="img" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
                             <title>LinkedIn</title>
                             <path
@@ -34,13 +40,15 @@ const Home = () => {
                 </div>
 
                 <div className='xl:ml-36 lg:ml-20 md:ml-16'>
-                    <h1 className='md:text-5xl lg:text-6xl text-4xl font-bold'>Altaf Fattah Amanullah <span className='md:text-5xl'>🖐️</span></h1>
-                    <div className='flex items-center gap-x-4 my-3 md:my-4 lg:my-6'>
+                    <h1 data-aos-duration="500" data-aos="fade-down" className='text-4xl font-bold md:text-5xl lg:text-6xl'>Hallo Aku, Altaf <span className='md:text-5xl'>🖐️</span></h1>
+                    <div data-aos-duration="500" data-aos="fade-left" className='flex items-center my-3 gap-x-4 md:my-4 lg:my-6'>
                         <div className='h-[0.1rem] w-12 bg-slate-700'></div>
-                        <p className='text-slate-700 font-medium md:text-lg lg:text-2xl'>Front-end Developer</p>
+                        <p className='font-medium text-slate-700 md:text-lg lg:text-2xl'>Front-end Developer</p>
                     </div>
-                    <p className='text-slate-500 mb-6 md:text-md lg:text-lg max-w-sm'>Seorang bocah berumur 18 tahun yang ingin menjadi Front-end Developer</p>
-                    <button className='h-14 w-44 rounded-full bg-black font-medium text-white md:text-lg'>Kirim Pesan</button>
+                    <div data-aos-duration="500" data-aos="fade-up">
+                    <p className='max-w-sm mb-6 text-slate-500 md:text-md lg:text-lg'>Seorang bocah berumur 18 tahun yang ingin menjadi Front-end Developer</p>
+                    <button className='font-medium text-white bg-black rounded-full h-14 w-44 md:text-lg'>Kirim Pesan</button>
+                    </div>
                 </div>
 
             </div>
