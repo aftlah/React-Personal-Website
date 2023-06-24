@@ -12,7 +12,7 @@ const Home = ({id}) => {
             <div  className='flex flex-row items-center justify-center w-full h-full gap-10 md:justify-start'>
                 <div data-aos-duration="500" data-aos="fade-up" className='flex h-[40%] flex-col lg:ml-20 xl:ml-36 items-start justify-start md:justify-evenly gap-y-8'>
                     <a href="" >
-                        <svg class="fill-current w-[1.30rem] md:w-6" role="img" viewBox="0 0 24 24"
+                        <svg className="fill-current w-[1.30rem] md:w-6" role="img" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
                             <title>GitHub</title>
                             <path
@@ -21,7 +21,7 @@ const Home = ({id}) => {
                     </a>
 
                     <a href="" >
-                        <svg class="fill-current w-[1.30rem] md:w-6" role="img" viewBox="0 0 24 24"
+                        <svg className="fill-current w-[1.30rem] md:w-6" role="img" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
                             <title>Instagram</title>
                             <path
@@ -30,7 +30,7 @@ const Home = ({id}) => {
                     </a>
 
                     <a href="" >
-                        <svg class="fill-current w-[1.30rem] md:w-6" role="img" viewBox="0 0 24 24"
+                        <svg className="fill-current w-[1.30rem] md:w-6" role="img" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
                             <title>LinkedIn</title>
                             <path
@@ -40,7 +40,7 @@ const Home = ({id}) => {
                 </div>
 
                 <div className='xl:ml-36 lg:ml-20 md:ml-16'>
-                    <h1 data-aos-duration="500" data-aos="fade-down" className='text-4xl font-bold md:text-5xl lg:text-6xl'>Hallo Aku, Altaf <span className='md:text-5xl'>🖐️</span></h1>
+                    <h1 data-aos-duration="500" data-aos="fade-down" className='text-4xl font-bold md:text-5xl lg:text-6xl'>Hallo Aku, Altaf <span className='text-3xl md:text-5xl'>🖐️</span></h1>
                     <div data-aos-duration="500" data-aos="fade-left" className='flex items-center my-3 gap-x-4 md:my-4 lg:my-6'>
                         <div className='h-[0.1rem] w-12 bg-slate-700'></div>
                         <p className='font-medium text-slate-700 md:text-lg lg:text-2xl'>Front-end Developer</p>

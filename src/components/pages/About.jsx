@@ -1,5 +1,5 @@
 import React from 'react'
-import AosCom from '../../uttils/AosCom'
+import AosCom from '../../../utils/AosCom'
 
 const About = ({id}) => {
     return (

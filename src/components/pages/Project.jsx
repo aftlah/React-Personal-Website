@@ -1,5 +1,6 @@
 import React from 'react'
-import AosCom from '../../uttils/AosCom'
+import AosCom from '../../../utils/AosCom'
+import {BsArrowRightShort} from 'react-icons/bs'
 
 const Project = ({ id }) => {
     return (
@@ -22,7 +23,10 @@ const Project = ({ id }) => {
                                 </div>
                                 <div className='bg-cyan-600 w-[90%] mx-auto my-3'>
                                     <h1 className='text-xl font-semibold'>Name Project</h1>
-                                    <p className='font-normal text-md text-slate-500'>Demo</p>
+                                    <p className='font-normal text-md text-slate-500'>
+                                        <a href="">Demo</a>
+                                        <BsArrowRightShort className='inline-block'/>
+                                    </p>
                                 </div>
                             </div>
                         </AosCom>
@@ -36,7 +40,10 @@ const Project = ({ id }) => {
                                 </div>
                                 <div className='bg-cyan-600 w-[90%] mx-auto my-3'>
                                     <h1 className='text-xl font-semibold'>Name Project</h1>
-                                    <p className='font-normal text-md text-slate-500'>Demo</p>
+                                    <p className='font-normal text-md text-slate-500'>
+                                        <a href="">Demo</a>
+                                        <BsArrowRightShort className='inline-block'/>
+                                    </p>
                                 </div>
                             </div>
                         </AosCom>
@@ -50,7 +57,10 @@ const Project = ({ id }) => {
                                 </div>
                                 <div className='bg-cyan-600 w-[90%] mx-auto my-3'>
                                     <h1 className='text-xl font-semibold'>Name Project</h1>
-                                    <p className='font-normal text-md text-slate-500'>Demo</p>
+                                    <p className='font-normal text-md text-slate-500'>
+                                        <a href="">Demo</a>
+                                        <BsArrowRightShort className='inline-block'/>
+                                    </p>
                                 </div>
                             </div>
                         </AosCom>
@@ -65,7 +75,10 @@ const Project = ({ id }) => {
                                 </div>
                                 <div className='bg-cyan-600 w-[90%] mx-auto my-3'>
                                     <h1 className='text-xl font-semibold'>Name Project</h1>
-                                    <p className='font-normal text-md text-slate-500'>Demo</p>
+                                    <p className='font-normal text-md text-slate-500'>
+                                        <a href="">Demo</a>
+                                        <BsArrowRightShort className='inline-block'/>
+                                    </p>
                                 </div>
                             </div>
                         </AosCom>
