@@ -11,9 +11,9 @@ const Skills = ({ id }) => {
     <div>
       <section
         id={id}
-        className="container w-full h-auto p-4 mx-auto mt-20 bg-cyan-800 "
+        className="container w-full h-auto p-4 mx-auto mt-20 "
       >
-        <div className="w-[90%] mx-auto text-center bg-red-600">
+        <div className="w-[90%] mx-auto text-center ">
           <AosCom dataAos="fade" dataAosDelay={true}>
             <h1 className="text-2xl font-bold text-slate-900">Skills</h1>
             <p className="mt-3 text-sm text-slate-600">Keterampilan saya</p>
@@ -21,38 +21,40 @@ const Skills = ({ id }) => {
         </div>
 
         <AosCom dataAos={"fade-down"} dataAosOnce={true}>
-          <div className="flex flex-col items-center justify-center w-full h-auto px-5 mt-10 bg-amber-600 gap-y-10 md:gap-x-14 md:flex-row md:px-0">
-            <div className="bg-blue-500 w-10/12 h-72 rounded-3xl md:w-[21rem]">
-              <div className="w-full mt-5 text-center">
+          <div className="flex flex-col items-center justify-center w-full h-auto px-5 mt-10 gap-y-10 md:gap-x-14 md:flex-row md:px-0">
+            <div className=" w-10/12 h-auto rounded-3xl md:w-[21rem] bg-white border  border-slate-200">
+              <div className="w-full my-3 text-center">
                 <h1 className="font-semibold text-md text-slate-800">
                   Front-End Skill
                 </h1>
               </div>
 
-              <div className="w-11/12 mx-auto mt-3 bg-red-500">
-                <ul className="flex justify-center gap-10 list-none list-inside bg-green-700">
-                  <div className="flex flex-col gap-y-10">
+              <div className="w-11/12 mx-auto ">
+                <ul className="flex justify-center gap-10 py-3 list-none list-inside ">
+                  <div className="flex flex-col ml-10 gap-y-5">
                     <li className="w-24 h-auto ">
                       <AiFillHtml5 className="text-xl md:text-3xl" />
-                      <p className="text-sm text-slate-700">Interm7diat</p>
+                      <p className="mt-1 text-[0.55rem] ml-1 text-slate-700">Interm7diat</p>
                     </li>
+                    
                     <li className="w-24 h-auto ">
                       <DiCss3 className="text-xl md:text-3xl" />
-                      <p className="text-xs md:text-sm text-slate-700">Intermediat</p>
+                      <p className="mt-1 text-[0.55rem] ml-1 text-slate-700">Intermediat</p>
                     </li>
                     <li className="w-24 h-auto ">
-                      <SiJavascript className="text-lg md:text-2xl" />
-                      <p className="text-xs md:text-sm text-slate-700">Intermediat</p>
+                      <SiJavascript className="ml-1 text-lg md:text-2xl" />
+                      <p className="mt-1 text-[0.55rem] ml-1 text-slate-700">Intermediat</p>
                     </li>
                   </div>
-                  <div className="flex flex-col gap-y-10">
+                  
+                  <div className="flex flex-col gap-y-5">
                     <li className="w-24 h-auto ">
                       <BiLogoTailwindCss className="text-xl md:text-3xl" />
-                      <p className="text-xs md:text-sm text-slate-700">Intermediat</p>
+                      <p className="mt-1 text-[0.55rem] ml-1 text-slate-700">Intermediat</p>
                     </li>
                     <li className="w-24 h-auto ">
                       <BiLogoReact className="text-xl md:text-3xl" />
-                      <p className="text-xs md:text-sm text-slate-700">Intermediat</p>
+                      <p className="mt-1 text-[0.55rem] ml-1 text-slate-700">Intermediat</p>
                     </li>
                     <li className="w-24 h-auto ">
                       <svg
@@ -68,7 +70,7 @@ const Skills = ({ id }) => {
                           fill="currentColor"
                         />
                       </svg>
-                      <p className="text-sm text-slate-700">Intermediat</p>
+                      <p className="mt-1 text-[0.55rem] ml-1 text-slate-700">Intermediat</p>
                     </li>
                   </div>
                 </ul>

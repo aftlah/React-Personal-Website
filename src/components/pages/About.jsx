@@ -19,7 +19,7 @@ const About = ({ id }) => {
                 </div>
             </AosCom>
 
-            <div className='flex flex-col items-start w-full h-auto mt-10 md:flex-row md:justify-center lg:gap-x-10' >
+            <div className='flex flex-col items-start w-full h-auto mt-16 md:flex-row md:justify-center lg:gap-x-10' >
                 <div className='w-full md:w-[25rem] md:ml-10'>
                     <AosCom dataAos="fade" dataAosDelay={50} dataAosOnce={"true"} dataAosDuration={300}>
                         <div className='mx-auto bg-center w-60 h-60 rounded-2xl lg:w-96 lg:h-96' style={StyleImg}></div>
