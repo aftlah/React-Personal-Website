@@ -9,13 +9,13 @@ import Project from "./components/pages/Project"
 function App() {
 
   return (
-    <>
+    <div className="bg-slate-50">
     <Navbar home={"#home"} about={"#about"} skills={"#skills"} project={"#project"}/>
     <Home id={"home"}/>
     <About id={"about"}/>
     <Skills  id={"skills"}/>
     <Project id={"project"}/>
-    </>
+    </div>
   )
 }
 

@@ -4,7 +4,7 @@ import Aos from 'aos'
 const Home = ({ id }) => {
     Aos.init()
     return (
-        <section id={id} className="container p-4  w-full h-[35rem] mx-auto mt-16 bg-cyan-800 ">
+        <section id={id} className="container p-4  w-full h-[35rem] mx-auto mt-16  ">
             <div className='flex flex-row items-center justify-center w-full h-full gap-10 md:justify-start'>
                 <AosCom dataAosDuration={500} dataAos={"fade-right"}>
                     <div className='flex h-[40%] flex-col lg:ml-20 xl:ml-36 items-start justify-start md:justify-evenly gap-y-8'>
