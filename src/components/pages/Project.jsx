@@ -43,15 +43,15 @@ const Project = ({ id }) => {
                     <div className="w-[90%] bg-orange-500 h-[13rem] mx-auto mt-5 rounded-2xl md:h-[12rem] lg:h-[15rem]">
                       <img src="" alt="" />
                     </div>
-                    <div className=" w-[90%] mx-auto my-1">
-                      <h1 className="text-xl font-semibold text-slate-800">
+                    <div className=" w-[90%] mx-auto mt-2">
+                      <h1 className="font-bold text-md text-slate-700">
                         {project.name}
                       </h1>
                       <p className="text-slate-500 group w-[30%]">
-                        <a href="" className="text-base font-medium">
+                        <a href="" className="text-sm font-medium">
                           {project.demo}
                         </a>
-                        <BsArrowRightShort className="inline-block ml-1 text-2xl font-extrabold transition-all ease-linear group-hover:translate-x-1" />
+                        <BsArrowRightShort className="inline-block ml-1 text-xl font-extrabold transition-all ease-linear group-hover:translate-x-1" />
                       </p>
                     </div>
                   </div>
