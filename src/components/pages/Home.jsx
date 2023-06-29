@@ -40,7 +40,7 @@ const Home = ({ id }) => {
               </p>
             </AosCom>
             <AosCom dataAos={"fade-up"} dataAosDelay={200}>
-              <button className="italic font-medium text-white bg-black rounded-full h-14 w-44 md:text-lg">
+              <button className="w-32 h-12 italic font-medium text-white bg-black rounded-full md:text-lg">
                 Contact Me
               </button>
             </AosCom>

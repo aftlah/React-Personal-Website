@@ -2,8 +2,7 @@ import React from 'react'
 import AosCom from '../../../utils/AosCom'
 
 const Experience = ({duration,cardLogo,cardText,subCardText}) => {
-  return (
-    // <div>
+  return (    
             <AosCom
               dataAos="fade-down"
               dataAosDelay={50}
@@ -20,7 +19,6 @@ const Experience = ({duration,cardLogo,cardText,subCardText}) => {
                 </div>
               </div>
             </AosCom>
-    // </div
   )
 }
 

@@ -11,32 +11,32 @@ const Skill = () => {
       <div className="flex flex-col ml-10 gap-y-5">
         <li className="w-24 h-auto ">
           <AiFillHtml5 className="text-xl md:text-3xl" />
-          <p className="mt-1 text-[0.55rem] ml-1 text-slate-700">Intermediate</p>
+          <p className="mt-1 text-[0.55rem] text-slate-700">Intermediate</p>
         </li>
 
         <li className="w-24 h-auto ">
           <DiCss3 className="text-xl md:text-3xl" />
-          <p className="mt-1 text-[0.55rem] ml-1 text-slate-700">Intermediate</p>
+          <p className="mt-1 text-[0.55rem] text-slate-700">Intermediate</p>
         </li>
         <li className="w-24 h-auto ">
           <SiJavascript className="ml-1 text-lg md:text-2xl" />
-          <p className="mt-1 text-[0.55rem] ml-1 text-slate-700">Intermediate</p>
+          <p className="mt-1 text-[0.55rem] text-slate-700">Intermediate</p>
         </li>
       </div>
 
       <div className="flex flex-col gap-y-5">
         <li className="w-24 h-auto ">
           <BiLogoTailwindCss className="text-xl md:text-3xl" />
-          <p className="mt-1 text-[0.55rem] ml-1 text-slate-700">Intermediate</p>
+          <p className="mt-1 text-[0.55rem] text-slate-700">Intermediate</p>
         </li>
         <li className="w-24 h-auto ">
           <BiLogoReact className="text-xl md:text-3xl" />
-          <p className="mt-1 text-[0.55rem] ml-1 text-slate-700">Intermediate</p>
+          <p className="mt-1 text-[0.55rem] text-slate-700">Intermediate</p>
         </li>
         <li className="w-24 h-auto ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="block w-6 md:w-8 "
+            className="block w-[1.38rem] md:w-8 "
             viewBox="0 0 118 94"
           >
             <path
@@ -46,7 +46,7 @@ const Skill = () => {
               fill="currentColor"
             />
           </svg>
-          <p className="mt-1 text-[0.55rem] ml-1 text-slate-700">Intermediate</p>
+          <p className="mt-1 text-[0.55rem] text-slate-700">Intermediate</p>
         </li>
       </div>
       </>    
