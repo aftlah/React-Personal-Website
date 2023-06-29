@@ -7,7 +7,7 @@ import Project from "./components/pages/Project";
 
 function App() {
   return (
-    <div className="relative bg-slate-50">
+    <div className="relative overflow-x-hidden bg-slate-50">
       <Navbar
         home={"#home"}
         about={"#about"}
