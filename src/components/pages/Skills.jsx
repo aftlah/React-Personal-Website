@@ -1,6 +1,5 @@
 import React from "react";
 import AosCom from "../../../utils/AosCom";
-
 import Skill from "../fragment/Skill";
 
 const Skills = ({ id }) => {
