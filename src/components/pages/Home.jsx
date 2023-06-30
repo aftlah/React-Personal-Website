@@ -2,6 +2,7 @@ import React from "react";
 import AosCom from "../../../utils/AosCom";
 import Aos from "aos";
 import Sosmed from "../fragment/Sosmed";
+
 const Home = ({ id }) => {
   Aos.init();
   return (
