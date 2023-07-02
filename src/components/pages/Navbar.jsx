@@ -6,7 +6,7 @@ const Navbar = ({ home, about, skills, project }) => {
     <nav className="relative">
       <div className="fixed z-50 w-16 h-auto bottom-10 right-3 md:w-20 md:h-96">
         <AosCom dataAos="fade-left" dataAosOnce="true">
-          <div className="flex flex-col items-center justify-center h-full text-center bg-transparent border rounded-full gap-y-3 backdrop-blur-xl border-slate-300">
+          <div className="flex flex-col items-center justify-center h-full text-center bg-transparent border rounded-full gap-y-3 backdrop-blur-sm border-slate-300">
             <div className="bg-slate-500 w-[0.12rem] h-10 rounded-e-full"></div>
             <a
               href={home}
