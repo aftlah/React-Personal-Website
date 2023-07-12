@@ -2,11 +2,11 @@ import React from "react";
 import AosCom from "../../../utils/AosCom";
 import Skill from "../fragment/Skill";
 
-const Skills = ({ id }) => {
+const Skills = () => {
   return (
     <div>
       <section
-        id={id}
+        id="skills"
         className="container w-full h-auto p-4 mx-auto mt-20 "
       >
         <div className="w-[90%] mx-auto text-center ">

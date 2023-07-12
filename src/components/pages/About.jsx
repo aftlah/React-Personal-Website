@@ -3,7 +3,7 @@ import AosCom from "../../../utils/AosCom";
 import imageKu from "../../assets/images/gambar1.jpeg";
 import Experience from "../fragment/Experience";
 
-const About = ({ id }) => {
+const About = () => {
   const StyleImg = {
     backgroundImage: `url(${imageKu})`,
     backgroundSize: "cover",
@@ -11,7 +11,7 @@ const About = ({ id }) => {
   };
 
   return (
-    <section id={id} className="container w-full h-auto p-4 mx-auto mt-20 ">
+    <section id="about" className="container w-full h-auto p-4 mx-auto mt-20 ">
       <AosCom dataAos="fade" dataAosOnce="true">
         <div className="w-[90%] mx-auto text-center ">
           <h1 className="text-2xl font-bold text-slate-900">About me</h1>

@@ -1,7 +1,7 @@
 import React from "react";
 import AosCom from "../../../utils/AosCom";
 
-const Navbar = ({ home, about, skills, project }) => {
+const Navbar = () => {
   return (
     <nav className="relative">
       <div className="fixed z-50 w-16 h-auto bottom-10 right-3 md:w-20 md:h-96">
@@ -9,25 +9,25 @@ const Navbar = ({ home, about, skills, project }) => {
           <div className="flex flex-col items-center justify-center h-full text-center bg-transparent border rounded-full gap-y-3 backdrop-blur-sm border-slate-300">
             <div className="bg-slate-500 w-[0.12rem] h-10 rounded-e-full"></div>
             <a
-              href={home}
+              href="#home"
               className="py-1.5 font-medium md:py-3 text-slate-700"
             >
               Home
             </a>
             <a
-              href={about}
+              href="#about"
               className="py-1.5 font-medium md:py-3 text-slate-700"
             >
               About
             </a>
             <a
-              href={skills}
+              href="#skills"
               className="py-1.5 font-medium md:py-3 text-slate-700"
             >
               Skills
             </a>
             <a
-              href={project}
+              href="#project"
               className="py-1.5 font-medium md:py-3 text-slate-700"
             >
               Project

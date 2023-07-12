@@ -3,7 +3,7 @@ import AosCom from "../../../utils/AosCom";
 import { BsArrowRightShort } from "react-icons/bs";
 import data from "../../json/projects.json";
 
-const Project = ({ id }) => {
+const Project = () => {
   const [projects, setProjects] = useState([]);
 
   
@@ -14,7 +14,7 @@ const Project = ({ id }) => {
   return (
     <div>
       <section
-        id={id}
+        id="project"
         className="container w-full h-auto p-4 mx-auto mt-20 md:p-0 lg:p-4"
       >
         <div className="w-[90%] mx-auto text-center ">
