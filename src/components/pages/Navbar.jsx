@@ -1,6 +1,7 @@
 import React from "react";
 import AosCom from "../../../utils/AosCom";
 
+
 const Navbar = () => {
   return (
     <nav className="relative">

@@ -17,25 +17,6 @@
       "dataAosDelay": 60,
       "dataAosOnce": "true",
       "dataAosDuration": 400
-    },
-    {
-      "id": "3",
-      "name": "name project3",
-      "demo": "Demo",
-      "dataAos": "fade",
-      "imgProject": "",
-      "dataAosDelay": 70,
-      "dataAosOnce": "true",
-      "dataAosDuration": 500
-    },
-    {
-      "id": "4",
-      "name": "name project4",
-      "demo": "Demo",
-      "dataAos": "fade",
-      "imgProject": "",
-      "dataAosDelay": 80,
-      "dataAosOnce": "true",
-      "dataAosDuration": 600
     }
+   
   ]
