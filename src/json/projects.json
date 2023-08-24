@@ -1,22 +1,15 @@
-  [ {
+  [ 
+    {
       "id": "1",
-      "name": "name project1",
+      "name": "Name Project",
       "demo": "Demo",
+      "image": "",
+      "link": "",
       "dataAos": "fade",
-      "imgProject": "",
       "dataAosDelay": 50,
       "dataAosOnce": "true",
       "dataAosDuration": 300
-    },
-{
-      "id": "2",
-      "name": "name project2",
-      "demo": "Demo",
-      "dataAos": "fade",
-      "imgProject": "",
-      "dataAosDelay": 60,
-      "dataAosOnce": "true",
-      "dataAosDuration": 400
     }
+
    
   ]

@@ -19,7 +19,7 @@ const About = () => {
         </div>
       </AosCom>
 
-      <div className="flex flex-col items-start w-full h-auto mt-16 md:flex-row md:justify-center lg:gap-x-10">
+      <div className="flex flex-col items-start w-full h-auto mt-16 md:flex-row md:justify-center lg:gap-x-20">
         <div className="w-full md:w-[25rem] md:ml-10">
           <AosCom
             dataAos="fade"
@@ -40,19 +40,19 @@ const About = () => {
               duration={300}
               cardLogo={"📸"}
               cardText={"Pengalaman"}
-              subCardText={"1.5 + Tahun"}
+              subCardText={" 1 Tahun"}
             />
             <Experience
               duration={450}
               cardLogo={"📸"}
-              cardText={"Pengalaman"}
-              subCardText={"1.5 + Tahun"}
+              cardText={"Project"}
+              subCardText={"5+ Project"}
             />
             <Experience
               duration={600}
               cardLogo={"📸"}
-              cardText={"Pengalaman"}
-              subCardText={"1.5 + Tahun"}
+              cardText={"Support"}
+              subCardText={"Online 24/7"}
             />
           </div>
 

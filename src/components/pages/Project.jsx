@@ -40,15 +40,15 @@ const Project = () => {
               >
                 <div className="w-full bg-white h-full rounded-2xl md:w-[22rem] lg:w-[28rem] mx-auto md:mx-5 lg:mx-auto py-1 border ">
                   <div>
-                    <div className="w-[90%] bg-orange-500 h-[13rem] mx-auto mt-5 rounded-2xl md:h-[12rem] lg:h-[15rem]">
-                      <img src="" alt="" />
+                    <div className="w-[90%] bg-orange-100 h-[13rem] mx-auto mt-5 rounded-2xl md:h-[12rem] lg:h-[15rem]">
+                      <img src={project.image} alt="" />
                     </div>
-                    <div className=" w-[90%] mx-auto mt-2">
+                    <div className=" w-[88%] mx-auto mt-2">
                       <h1 className="font-bold text-md text-slate-700">
                         {project.name}
                       </h1>
-                      <p className="text-slate-500 group w-[30%]">
-                        <a href="" className="text-sm font-medium">
+                      <p className="text-slate-500 group w-[30%] pb-2">
+                        <a href={project.link} className="text-sm font-medium">
                           {project.demo}
                         </a>
                         <BsArrowRightShort className="inline-block ml-1 text-xl font-extrabold transition-all ease-linear group-hover:translate-x-1" />
