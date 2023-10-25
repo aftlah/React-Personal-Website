@@ -46,7 +46,7 @@ const Home = () => {
             </AosCom>
             <AosCom dataAos={"fade-up"} dataAosDelay={200}>
               <button className="w-32 h-12 italic font-medium text-white bg-black rounded-full md:text-lg">
-                Contact Me
+                <a href="https://www.instagram.com/aftlah/" target="_blank">Contact Me</a>
               </button>
             </AosCom>
           </div>

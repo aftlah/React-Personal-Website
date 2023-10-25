@@ -40,13 +40,13 @@ const About = () => {
               duration={300}
               cardLogo={"📸"}
               cardText={"Pengalaman"}
-              subCardText={" 1 Tahun"}
+              subCardText={" > 1 Tahun"}
             />
             <Experience
               duration={450}
               cardLogo={"📸"}
               cardText={"Project"}
-              subCardText={"5+ Project"}
+              subCardText={"3+ Project"}
             />
             <Experience
               duration={600}
