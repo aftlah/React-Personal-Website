@@ -1,9 +1,42 @@
   [ 
     {
       "id": "1",
+      "name": "Quran-Ku",
+      "demo": "Demo",
+      "image": "/src/assets/images/quranku.png",
+      "link": "",
+      "dataAos": "fade",
+      "dataAosDelay": 50,
+      "dataAosOnce": "true",
+      "dataAosDuration": 300
+    },
+    {
+      "id": "2",
       "name": "Name Project",
       "demo": "Demo",
-      "image": "",
+      "image": "/src/assets/images/haphap-games.png",
+      "link": "",
+      "dataAos": "fade",
+      "dataAosDelay": 50,
+      "dataAosOnce": "true",
+      "dataAosDuration": 300
+    },
+    {
+      "id": "2",
+      "name": "Name Project",
+      "demo": "Demo",
+      "image": "/src/assets/images/rumah-impian.png",
+      "link": "",
+      "dataAos": "fade",
+      "dataAosDelay": 50,
+      "dataAosOnce": "true",
+      "dataAosDuration": 300
+    },
+    {
+      "id": "2",
+      "name": "Name Project",
+      "demo": "Demo",
+      "image": "/src/assets/images/tes-tahfidz.png",
       "link": "",
       "dataAos": "fade",
       "dataAosDelay": 50,

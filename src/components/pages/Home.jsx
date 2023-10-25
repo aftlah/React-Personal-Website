@@ -40,7 +40,7 @@ const Home = () => {
           <div>
             <AosCom dataAos={"fade-up"} dataAosDelay={50}>
               <p className="max-w-sm mb-6 text-slate-500 md:text-md lg:text-lg">
-                Seorang bocah berumur 18 tahun yang ingin menjadi Front-end
+                Seorang  berumur 18 tahun yang ingin menjadi Front-end
                 Developer
               </p>
             </AosCom>

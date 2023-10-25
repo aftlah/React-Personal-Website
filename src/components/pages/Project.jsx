@@ -40,8 +40,8 @@ const Project = () => {
               >
                 <div className="w-full bg-white h-full rounded-2xl md:w-[22rem] lg:w-[28rem] mx-auto md:mx-5 lg:mx-auto py-1 border ">
                   <div>
-                    <div className="w-[90%] bg-orange-100 h-[13rem] mx-auto mt-5 rounded-2xl md:h-[12rem] lg:h-[15rem]">
-                      <img src={project.image} alt="" />
+                    <div className="flex w-[90%] bg-blue-700 h-[12rem] mx-auto mt-5 rounded-2xl md:h-[12rem] lg:h-[14rem]">
+                      <img src={project.image} alt="" className="rounded-xl"/>
                     </div>
                     <div className=" w-[88%] mx-auto mt-2">
                       <h1 className="font-bold text-md text-slate-700">
