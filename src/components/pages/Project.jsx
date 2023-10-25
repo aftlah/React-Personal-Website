@@ -47,11 +47,11 @@ const Project = () => {
                       <h1 className="font-bold text-md text-slate-700">
                         {project.name}
                       </h1>
-                      <p className="text-slate-500 group w-[30%] pb-2">
-                        <a href={project.link} className="text-sm font-medium">
+                      <p className="text-slate-500 group w-[16%] pb-2">
+                        <a href={project.link} target="_blank" className="text-sm font-medium">
                           {project.demo}
-                        </a>
                         <BsArrowRightShort className="inline-block ml-1 text-xl font-extrabold transition-all ease-linear group-hover:translate-x-1" />
+                        </a>
                       </p>
                     </div>
                   </div>

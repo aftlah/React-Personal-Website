@@ -11,12 +11,12 @@ const Skill = () => {
       <div className="flex flex-col ml-10 gap-y-5">
         <li className="w-24 h-auto ">
           <AiFillHtml5 className="text-xl md:text-3xl" />
-          <p className="mt-1 text-[0.55rem] text-slate-700">Intermediate</p>
+          <p className="mt-1 text-[0.55rem] text-slate-700">Advance</p>
         </li>
 
         <li className="w-24 h-auto ">
           <DiCss3 className="text-xl md:text-3xl" />
-          <p className="mt-1 text-[0.55rem] text-slate-700">Intermediate</p>
+          <p className="mt-1 text-[0.55rem] text-slate-700">Advance</p>
         </li>
         <li className="w-24 h-auto ">
           <SiJavascript className="ml-1 text-lg md:text-2xl" />

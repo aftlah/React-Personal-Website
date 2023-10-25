@@ -15,7 +15,7 @@ const About = () => {
       <AosCom dataAos="fade" dataAosOnce="true">
         <div className="w-[90%] mx-auto text-center ">
           <h1 className="text-2xl font-bold text-slate-900">About me</h1>
-          <p className="mt-3 text-sm text-slate-600">Introduction</p>
+          <p className="mt-3 text-sm text-slate-600">Tetang Saya</p>
         </div>
       </AosCom>
 
