@@ -41,7 +41,8 @@ const Project = () => {
                   <div>
                     <div className="flex w-[90%] h-[12rem] mx-auto mt-5 rounded-2xl md:h-[12rem] lg:h-[14rem]">
                       <img
-                        src={project.image}
+                        // src={project.image}
+                        src="/src/assets/images/rumah-impian.jpeg"
                         alt="Error"
                         className="w-full rounded-xl"
                       />
