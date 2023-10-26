@@ -50,7 +50,7 @@ const Project = () => {
                       <h1 className="font-bold text-md text-slate-700">
                         {project.name}
                       </h1>
-                      <p className="text-slate-500 group w-[15%] md:w-[14%] pb-2">
+                      <p className="text-slate-500 group w-[20%] pb-2">
                         <a
                           href={project.link}
                           target="_blank"
