@@ -7,10 +7,6 @@ import Type from "../../../utils/Typed";
 
 const Home = () => {
   Aos.init();
-
-
-  
-
   return (
     <section id="home" className="container p-4  w-full h-[37rem] mx-auto   ">
       <div className="flex flex-row items-center justify-center w-full h-full gap-10 md:justify-start">
