@@ -2,8 +2,7 @@
     {
       "id": "1",
       "name": "Quran-Ku",
-      "demo": "Demo",
-      "image": "/src/assets/images/quran-ku.jpeg",
+      "image": "/src/assets/images/quranku.jpeg",
       "link": "https://aftlah.github.io/Quran-Ku/",
       "dataAos": "fade",
       "dataAosDelay": 50,
@@ -13,7 +12,6 @@
     {
       "id": "2",
       "name": "Hap Hap Games",
-      "demo": "Demo",
       "image": "/src/assets/images/haphap-games.jpeg",
       "link": "https://hap-hap-games.vercel.app/",
       "dataAos": "fade",
@@ -24,7 +22,6 @@
     {
       "id": "3",
       "name": "Rumah Impian",
-      "demo": "Demo",
       "image": "/src/assets/images/rumah-impian.jpeg",
       "link": "https://rumah-impian-peach.vercel.app/",
       "dataAos": "fade",
@@ -35,7 +32,6 @@
     {
       "id": "4",
       "name": "Tes Tahfidz",
-      "demo": "Demo",
       "image": "/src/assets/images/tes-tahfidz.jpeg",
       "link": "https://tes-tahfidz-pink.vercel.app/",
       "dataAos": "fade",

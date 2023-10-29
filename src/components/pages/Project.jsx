@@ -1,13 +1,60 @@
 import React, { useEffect, useState } from "react";
 import AosCom from "../../../utils/AosCom";
 import { BsArrowRightShort } from "react-icons/bs";
+// import a from "../../../public/"
 import data from "../../json/projects.json";
+
+// const data = [
+//     {
+//       id: 1,
+//       name: "Quran-Ku",
+//       image: "../../../public/quran-ku.jpeg",
+//       link: "https://aftlah.github.io/Quran-Ku/",
+//       dataAos: "fade",
+//       dataAosDelay: 50,
+//       dataAosOnce: true,
+//       dataAosDuration: 300
+//     },
+//     {
+//       id: 2,
+//       name: "Hap Hap Games",
+//       image: "/src/assets/images/haphap-games.jpeg",
+//       link: "https://hap-hap-games.vercel.app/",
+//       dataAos: "fade",
+//       dataAosDelay: 50,
+//       dataAosOnce: true,
+//       dataAosDuration: 300
+//     },
+//     {
+//       id: 3,
+//       name: "Rumah Impian",
+//       image: "/src/assets/images/rumah-impian.jpeg",
+//       link: "https://rumah-impian-peach.vercel.app/",
+//       dataAos: "fade",
+//       dataAosDelay: 50,
+//       dataAosOnce: true,
+//       dataAosDuration: 300
+//     },
+//     {
+//       id: 4,
+//       name: "Tes Tahfidz",
+//       image: "/src/assets/images/tes-tahfidz.jpeg",
+//       link: "https://tes-tahfidz-pink.vercel.app/",
+//       dataAos: "fade",
+//       dataAosDelay: 50,
+//       dataAosOnce: true,
+//       dataAosDuration: 300
+//     }
+  
+// ]
+
 
 const Project = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
     setProjects(data);
+    console.log(projects);
   }, []);
 
   return (
@@ -29,7 +76,7 @@ const Project = () => {
           {projects.map((project, i) => (
             <div
               key={i}
-              className="w-full h-full rounded-2xl md:w-[20rem] lg:w-[29rem] mx-auto md:mx-4 lg:mx-0 "
+              className="w-full h-full rounded-2xl  md:w-[20rem] lg:w-[29rem] mx-auto md:mx-4 lg:mx-0 "
             >
               <AosCom
                 dataAos={project.dataAos}
@@ -37,18 +84,17 @@ const Project = () => {
                 dataAosDelay={project.dataAosDelay}
                 dataAosOnce={project.dataAosOnce}
               >
-                <div className="w-full bg-white h-full rounded-2xl md:w-[22rem] lg:w-[28rem] mx-auto md:mx-5 lg:mx-auto py-1 border ">
+                <div className="max-w-md bg-white h-full  rounded-2xl md:w-[22rem] lg:w-[28rem] mx-auto md:mx-5 lg:mx-auto py-1 border ">
                   <div>
-                    <div className="flex w-[90%] h-[12rem] mx-auto mt-5 rounded-2xl md:h-[12rem] lg:h-[14rem]">
+                    <div className="flex w-[95%] sm:w-[90%] h-52 sm:h-56 mx-auto mt-5 rounded-2xl md:h-48 lg:h-56">
                       <img
-                        // src={project.image}
-                        src="/src/assets/images/rumah-impian.jpeg"
+                        src={project.image}
                         alt="Error"
                         className="w-full rounded-xl"
                       />
                     </div>
                     <div className=" w-[88%] mx-auto mt-2">
-                      <h1 className="font-bold text-md text-slate-700">
+                      <h1 className="font-bold text-md text-slate-700"> 
                         {project.name}
                       </h1>
                       <p className="text-slate-500 group w-[20%] pb-2">
@@ -57,7 +103,8 @@ const Project = () => {
                           target="_blank"
                           className="text-sm font-medium"
                         >
-                          {project.demo}
+                          
+                          Demo
                           <BsArrowRightShort className="inline-block ml-1 text-xl font-extrabold transition-all ease-linear group-hover:translate-x-1" />
                         </a>
                       </p>

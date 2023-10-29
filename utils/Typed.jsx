@@ -6,7 +6,7 @@ const Type = () => {
 
    useEffect(() => {
       const typed = new Typed(typedRef.current, {
-         strings:["Mahasiswa", "Front-end Developer", "Web Designer"],
+         strings:["Mahasiswa","Web Developer", "Front-end Developer", "Web Designer",],
          typeSpeed: 50,
          backSpeed: 50,
          backDelay: 400,
@@ -22,7 +22,7 @@ const Type = () => {
    return (
       <>
          <p className="font-medium text-slate-500 md:text-lg lg:text-xl"
-            ref={typedRef}></p>
+            ref={typedRef}/>
       </>
    );
 };

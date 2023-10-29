@@ -4,7 +4,6 @@ import Aos from "aos";
 import Sosmed from "../fragment/Sosmed";
 import Type from "../../../utils/Typed";
 
-
 const Home = () => {
   Aos.init();
   return (
@@ -16,9 +15,12 @@ const Home = () => {
 
         <div className="xl:ml-36 lg:ml-20 md:ml-16">
           <AosCom dataAos={"fade-down"} dataAosDuration={500}>
+            {/* Ukuran Mobile */}
             <h1 className="text-4xl font-bold md:text-5xl lg:text-6xl lg:hidden">
               Hallo Aku, Altaf <span className="text-3xl md:text-5xl">🖐️</span>
             </h1>
+
+            {/* Ukurang Desktop */}
             <h1 className="hidden ml-1 italic font-semibold md:text-5xl lg:text-2xl lg:block text-slate-600">
               Hallo Aku,
             </h1>
@@ -30,19 +32,21 @@ const Home = () => {
           <AosCom dataAos={"fade-left"} dataAosDuration={500}>
             <div className="flex items-center h-5 my-3 md:h-9 gap-x-2 md:gap-x-4 md:my-4 lg:my-6">
               <div className="h-[0.1rem] w-9  md:w-12 bg-slate-500"></div>
-              <Type/>
+              <Type />
             </div>
           </AosCom>
           <div>
             <AosCom dataAos={"fade-up"} dataAosDelay={50}>
               <p className="max-w-sm mb-6 text-slate-500 md:text-md lg:text-lg">
-                Seorang  berumur 18 tahun yang ingin menjadi Front-end
-                Developer
+                Seorang Mahasiswa yang ingin menjadi 
+                Fullstack Web Developer
               </p>
             </AosCom>
             <AosCom dataAos={"fade-up"} dataAosDelay={200}>
               <button className="w-32 h-12 italic font-medium text-white bg-black rounded-full md:text-lg">
-                <a href="https://www.instagram.com/aftlah/" target="_blank">Contact Me</a>
+                <a href="https://www.instagram.com/aftlah/" target="_blank">
+                  Contact Me
+                </a>
               </button>
             </AosCom>
           </div>
