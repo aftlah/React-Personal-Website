@@ -1,52 +1,51 @@
 import React, { useEffect, useState } from "react";
 import AosCom from "../../../utils/AosCom";
 import { BsArrowRightShort } from "react-icons/bs";
-// import a from "../../../public/"
-import data from "../../json/projects.json";
+// import data from "../../json/projects.json";
 
-// const data = [
-//     {
-//       id: 1,
-//       name: "Quran-Ku",
-//       image: "../../../public/quran-ku.jpeg",
-//       link: "https://aftlah.github.io/Quran-Ku/",
-//       dataAos: "fade",
-//       dataAosDelay: 50,
-//       dataAosOnce: true,
-//       dataAosDuration: 300
-//     },
-//     {
-//       id: 2,
-//       name: "Hap Hap Games",
-//       image: "/src/assets/images/haphap-games.jpeg",
-//       link: "https://hap-hap-games.vercel.app/",
-//       dataAos: "fade",
-//       dataAosDelay: 50,
-//       dataAosOnce: true,
-//       dataAosDuration: 300
-//     },
-//     {
-//       id: 3,
-//       name: "Rumah Impian",
-//       image: "/src/assets/images/rumah-impian.jpeg",
-//       link: "https://rumah-impian-peach.vercel.app/",
-//       dataAos: "fade",
-//       dataAosDelay: 50,
-//       dataAosOnce: true,
-//       dataAosDuration: 300
-//     },
-//     {
-//       id: 4,
-//       name: "Tes Tahfidz",
-//       image: "/src/assets/images/tes-tahfidz.jpeg",
-//       link: "https://tes-tahfidz-pink.vercel.app/",
-//       dataAos: "fade",
-//       dataAosDelay: 50,
-//       dataAosOnce: true,
-//       dataAosDuration: 300
-//     }
+const data = [
+    {
+      id: 1,
+      name: "Quran-Ku",
+      image: "/src/assets/images/quranku.jpeg",
+      link: "https://aftlah.github.io/Quran-Ku/",
+      dataAos: "fade",
+      dataAosDelay: 50,
+      dataAosOnce: true,
+      dataAosDuration: 300
+    },
+    {
+      id: 2,
+      name: "Hap Hap Games",
+      image: "/src/assets/images/haphap-games.jpeg",
+      link: "https://hap-hap-games.vercel.app/",
+      dataAos: "fade",
+      dataAosDelay: 50,
+      dataAosOnce: true,
+      dataAosDuration: 300
+    },
+    {
+      id: 3,
+      name: "Rumah Impian",
+      image: "/src/assets/images/rumah-impian.jpeg",
+      link: "https://rumah-impian-peach.vercel.app/",
+      dataAos: "fade",
+      dataAosDelay: 50,
+      dataAosOnce: true,
+      dataAosDuration: 300
+    },
+    {
+      id: 4,
+      name: "Tes Tahfidz",
+      image: "/src/assets/images/tes-tahfidz.jpeg",
+      link: "https://tes-tahfidz-pink.vercel.app/",
+      dataAos: "fade",
+      dataAosDelay: 50,
+      dataAosOnce: true,
+      dataAosDuration: 300
+    }
   
-// ]
+]
 
 
 const Project = () => {
