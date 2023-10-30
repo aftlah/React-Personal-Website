@@ -1,6 +1,6 @@
 import React from "react";
 import AosCom from "../../../utils/AosCom";
-import imageKu from "../../assets/images/gambar1.jpeg";
+import imageKu from "/public/images/gambar1.jpeg";
 import Experience from "../fragment/Experience";
 
 const About = () => {

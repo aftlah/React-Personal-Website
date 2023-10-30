@@ -1,60 +1,97 @@
 import React, { useEffect, useState } from "react";
 import AosCom from "../../../utils/AosCom";
+import Haphap from "/public/images/haphap-games.jpeg";
+import Quranku from "/public/images/quranku.jpeg";
+import RumahImpian from "/public/images/rumah-impian.jpeg";
+import TesTahfidz from "/public/images/tes-tahfidz.jpeg";
 import { BsArrowRightShort } from "react-icons/bs";
 // import data from "../../json/projects.json";
 
 const data = [
-    {
-      id: 1,
-      name: "Quran-Ku",
-      image: "/src/assets/images/quranku.jpeg",
-      link: "https://aftlah.github.io/Quran-Ku/",
-      dataAos: "fade",
-      dataAosDelay: 50,
-      dataAosOnce: true,
-      dataAosDuration: 300
+  {
+    id: 1,
+    name: "Quran-Ku",
+    image: {
+      backgroundImage: `url(${Haphap})`,
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "center"
     },
-    {
-      id: 2,
-      name: "Hap Hap Games",
-      image: "/src/assets/images/haphap-games.jpeg",
-      link: "https://hap-hap-games.vercel.app/",
-      dataAos: "fade",
-      dataAosDelay: 50,
-      dataAosOnce: true,
-      dataAosDuration: 300
+    link: "https://aftlah.github.io/Quran-Ku/",
+    
+  },
+  {
+    id: 2,
+    name: "Hap Hap Games",
+    image: {
+      backgroundImage: `url(${Quranku})`,
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "center"
     },
-    {
-      id: 3,
-      name: "Rumah Impian",
-      image: "/src/assets/images/rumah-impian.jpeg",
-      link: "https://rumah-impian-peach.vercel.app/",
-      dataAos: "fade",
-      dataAosDelay: 50,
-      dataAosOnce: true,
-      dataAosDuration: 300
+    link: "https://hap-hap-games.vercel.app/",
+  },
+  {
+    id: 3,
+    name: "Rumah Impian",
+    image:{
+      backgroundImage: `url(${RumahImpian})`,
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "center"
     },
-    {
-      id: 4,
-      name: "Tes Tahfidz",
-      image: "/src/assets/images/tes-tahfidz.jpeg",
-      link: "https://tes-tahfidz-pink.vercel.app/",
-      dataAos: "fade",
-      dataAosDelay: 50,
-      dataAosOnce: true,
-      dataAosDuration: 300
-    }
-  
-]
+    link: "https://rumah-impian-peach.vercel.app/",
+  },
+  {
+    id: 4,
+    name: "Tes Tahfidz",
+    image:  {
+      backgroundImage: `url(${TesTahfidz})`,
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "center"
+    },
+    link: "https://tes-tahfidz-pink.vercel.app/",
+  },
+];
 
+// const data = [
+//   {
+//     id: 1,
+//     name: "Quran-Ku",
+//     image: <Haphap/>,
+//     link: "https://aftlah.github.io/Quran-Ku/",
+    
+//   },
+//   {
+//     id: 2,
+//     name: "Hap Hap Games",
+//     image: <Haphap/>,
+//     link: "https://hap-hap-games.vercel.app/",
+//   },
+//   {
+//     id: 3,
+//     name: "Rumah Impian",
+//     image: <Haphap/>,
+//     link: "https://rumah-impian-peach.vercel.app/",
+//   },
+//   {
+//     id: 4,
+//     name: "Tes Tahfidz",
+//     image: <Haphap/>,
+//     link: "https://tes-tahfidz-pink.vercel.app/",
+//   },
+// ];
 
 const Project = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
     setProjects(data);
-    console.log(projects);
+    // console.log(projects);
   }, []);
+
+  
 
   return (
     <div>
@@ -78,22 +115,25 @@ const Project = () => {
               className="w-full h-full rounded-2xl  md:w-[20rem] lg:w-[29rem] mx-auto md:mx-4 lg:mx-0 "
             >
               <AosCom
-                dataAos={project.dataAos}
-                dataAosDuration={project.dataAosDuration}
-                dataAosDelay={project.dataAosDelay}
-                dataAosOnce={project.dataAosOnce}
+                dataAos="fade"
+                dataAosDelay={50}
+                dataAosOnce={"true"}
+                dataAosDuration={300}
               >
                 <div className="max-w-md bg-white h-full  rounded-2xl md:w-[22rem] lg:w-[28rem] mx-auto md:mx-5 lg:mx-auto py-1 border ">
                   <div>
                     <div className="flex w-[95%] sm:w-[90%] h-52 sm:h-56 mx-auto mt-5 rounded-2xl md:h-48 lg:h-56">
-                      <img
-                        src={project.image}
+                      {/* <Image src={project.image}></Image> */}
+                      {/* <img
+                        // src={project.image}
+                        src={<Haphap />}
                         alt="Error"
                         className="w-full rounded-xl"
-                      />
+                      /> */}
+                      <div className="w-full rounded-xl" style={project.image}></div>
                     </div>
                     <div className=" w-[88%] mx-auto mt-2">
-                      <h1 className="font-bold text-md text-slate-700"> 
+                      <h1 className="font-bold text-md text-slate-700">
                         {project.name}
                       </h1>
                       <p className="text-slate-500 group w-[20%] pb-2">
@@ -102,7 +142,6 @@ const Project = () => {
                           target="_blank"
                           className="text-sm font-medium"
                         >
-                          
                           Demo
                           <BsArrowRightShort className="inline-block ml-1 text-xl font-extrabold transition-all ease-linear group-hover:translate-x-1" />
                         </a>
