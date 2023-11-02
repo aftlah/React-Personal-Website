@@ -12,44 +12,43 @@ const data = [
     id: 1,
     name: "Quran-Ku",
     image: {
-      backgroundImage: `url(${Haphap})`,
+      backgroundImage: `url(${Quranku})`,
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
-      backgroundPosition: "center"
+      backgroundPosition: "center",
     },
     link: "https://aftlah.github.io/Quran-Ku/",
-    
   },
   {
     id: 2,
     name: "Hap Hap Games",
     image: {
-      backgroundImage: `url(${Quranku})`,
+      backgroundImage: `url(${Haphap})`,
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
-      backgroundPosition: "center"
+      backgroundPosition: "center",
     },
     link: "https://hap-hap-games.vercel.app/",
   },
   {
     id: 3,
     name: "Rumah Impian",
-    image:{
+    image: {
       backgroundImage: `url(${RumahImpian})`,
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
-      backgroundPosition: "center"
+      backgroundPosition: "center",
     },
     link: "https://rumah-impian-peach.vercel.app/",
   },
   {
     id: 4,
     name: "Tes Tahfidz",
-    image:  {
+    image: {
       backgroundImage: `url(${TesTahfidz})`,
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
-      backgroundPosition: "center"
+      backgroundPosition: "center",
     },
     link: "https://tes-tahfidz-pink.vercel.app/",
   },
@@ -61,7 +60,7 @@ const data = [
 //     name: "Quran-Ku",
 //     image: <Haphap/>,
 //     link: "https://aftlah.github.io/Quran-Ku/",
-    
+
 //   },
 //   {
 //     id: 2,
@@ -90,8 +89,6 @@ const Project = () => {
     setProjects(data);
     // console.log(projects);
   }, []);
-
-  
 
   return (
     <div>
@@ -130,7 +127,10 @@ const Project = () => {
                         alt="Error"
                         className="w-full rounded-xl"
                       /> */}
-                      <div className="w-full rounded-xl" style={project.image}></div>
+                      <div
+                        className="w-full rounded-xl"
+                        style={project.image}
+                      ></div>
                     </div>
                     <div className=" w-[88%] mx-auto mt-2">
                       <h1 className="font-bold text-md text-slate-700">
