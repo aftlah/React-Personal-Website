@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import AosCom from "../../../utils/AosCom";
-import Haphap from "/public/images/haphap-games.jpeg";
-import Quranku from "/public/images/quranku.jpeg";
-import RumahImpian from "/public/images/rumah-impian.jpeg";
-import TesTahfidz from "/public/images/tes-tahfidz.jpeg";
+import Haphap from "/images/haphap-games.jpeg";
+import Quranku from "/images/quranku.jpeg";
+import RumahImpian from "/images/rumah-impian.jpeg";
+import TesTahfidz from "/images/tes-tahfidz.jpeg";
 import { BsArrowRightShort } from "react-icons/bs";
 // import data from "../../json/projects.json";
 
@@ -15,9 +15,10 @@ const data = [
       backgroundImage: `url(${Quranku})`,
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
-      backgroundPosition: "center",
+      backgroundPosition: "center"
     },
     link: "https://aftlah.github.io/Quran-Ku/",
+    
   },
   {
     id: 2,
@@ -26,29 +27,29 @@ const data = [
       backgroundImage: `url(${Haphap})`,
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
-      backgroundPosition: "center",
+      backgroundPosition: "center"
     },
     link: "https://hap-hap-games.vercel.app/",
   },
   {
     id: 3,
     name: "Rumah Impian",
-    image: {
+    image:{
       backgroundImage: `url(${RumahImpian})`,
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
-      backgroundPosition: "center",
+      backgroundPosition: "center"
     },
     link: "https://rumah-impian-peach.vercel.app/",
   },
   {
     id: 4,
     name: "Tes Tahfidz",
-    image: {
+    image:  {
       backgroundImage: `url(${TesTahfidz})`,
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
-      backgroundPosition: "center",
+      backgroundPosition: "center"
     },
     link: "https://tes-tahfidz-pink.vercel.app/",
   },
@@ -60,7 +61,7 @@ const data = [
 //     name: "Quran-Ku",
 //     image: <Haphap/>,
 //     link: "https://aftlah.github.io/Quran-Ku/",
-
+    
 //   },
 //   {
 //     id: 2,
@@ -89,6 +90,8 @@ const Project = () => {
     setProjects(data);
     // console.log(projects);
   }, []);
+
+  
 
   return (
     <div>
@@ -120,17 +123,7 @@ const Project = () => {
                 <div className="max-w-md bg-white h-full  rounded-2xl md:w-[22rem] lg:w-[28rem] mx-auto md:mx-5 lg:mx-auto py-1 border ">
                   <div>
                     <div className="flex w-[95%] sm:w-[90%] h-52 sm:h-56 mx-auto mt-5 rounded-2xl md:h-48 lg:h-56">
-                      {/* <Image src={project.image}></Image> */}
-                      {/* <img
-                        // src={project.image}
-                        src={<Haphap />}
-                        alt="Error"
-                        className="w-full rounded-xl"
-                      /> */}
-                      <div
-                        className="w-full rounded-xl"
-                        style={project.image}
-                      ></div>
+                      <div className="w-full rounded-xl" style={project.image}></div>
                     </div>
                     <div className=" w-[88%] mx-auto mt-2">
                       <h1 className="font-bold text-md text-slate-700">

@@ -8,35 +8,30 @@ import { BiLogoReact } from "react-icons/bi";
 const Skill = () => {
   return (
 <>
-      <div className="flex flex-col ml-10 gap-y-5">
-        <li className="w-24 h-auto ">
-          <AiFillHtml5 className="text-xl md:text-3xl" />
-          <p className="mt-1 text-[0.55rem] text-slate-700">Advance</p>
+      <div className="flex flex-col ml-[6%] md:ml-5 gap-y-7 md:gap-y-10">
+        <li className="w-20 h-auto ">
+          <AiFillHtml5 className="text-4xl md:text-5xl" />
         </li>
 
-        <li className="w-24 h-auto ">
-          <DiCss3 className="text-xl md:text-3xl" />
-          <p className="mt-1 text-[0.55rem] text-slate-700">Advance</p>
+        <li className="w-20 h-auto ">
+          <DiCss3 className="text-4xl md:text-5xl" />
         </li>
-        <li className="w-24 h-auto ">
-          <SiJavascript className="ml-1 text-lg md:text-2xl" />
-          <p className="mt-1 text-[0.55rem] text-slate-700">Intermediate</p>
+        <li className="w-20 h-auto ">
+          <SiJavascript className="ml-1 text-3xl md:text-4xl" />
         </li>
       </div>
 
-      <div className="flex flex-col gap-y-5">
-        <li className="w-24 h-auto ">
-          <BiLogoTailwindCss className="text-xl md:text-3xl" />
-          <p className="mt-1 text-[0.55rem] text-slate-700">Intermediate</p>
+      <div className="flex flex-col gap-y-[1.7rem] md:gap-y-[2.16rem] ">
+        <li className="w-20 h-auto ">
+          <BiLogoTailwindCss className="text-4xl md:text-[3.6rem]" />
         </li>
-        <li className="w-24 h-auto ">
-          <BiLogoReact className="text-xl md:text-3xl" />
-          <p className="mt-1 text-[0.55rem] text-slate-700">Intermediate</p>
+        <li className="w-20 h-auto ">
+          <BiLogoReact className="text-4xl md:text-5xl" />
         </li>
-        <li className="w-24 h-auto ">
+        <li className="w-20 h-auto ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="block w-[1.38rem] md:w-8 "
+            className="block w-[2.3rem] md:w-12 "
             viewBox="0 0 118 94"
           >
             <path
@@ -46,7 +41,6 @@ const Skill = () => {
               fill="currentColor"
             />
           </svg>
-          <p className="mt-1 text-[0.55rem] text-slate-700">Intermediate</p>
         </li>
       </div>
       </>    
