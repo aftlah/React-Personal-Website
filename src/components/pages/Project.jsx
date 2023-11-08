@@ -5,7 +5,6 @@ import Quranku from "/images/quranku.jpeg";
 import RumahImpian from "/images/rumah-impian.jpeg";
 import TesTahfidz from "/images/tes-tahfidz.jpeg";
 import { BsArrowRightShort } from "react-icons/bs";
-// import data from "../../json/projects.json";
 
 const data = [
   {

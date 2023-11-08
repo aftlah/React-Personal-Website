@@ -1,8 +1,10 @@
 import React from "react";
 import AosCom from "../../../utils/AosCom";
-import imageKu from "/public/images/gambar1.jpeg";
+import imageKu from "/images/gambar1.jpeg";
 import Experience from "../fragment/Experience";
-
+import { FaProjectDiagram } from "react-icons/fa";
+import { BiSupport } from "react-icons/bi";
+import {MdWorkHistory} from  "react-icons/md"
 const About = () => {
   const StyleImg = {
     backgroundImage: `url(${imageKu})`,
@@ -38,19 +40,19 @@ const About = () => {
           <div className="flex justify-center w-full mx-auto gap-x-3 gap-y-2">
             <Experience
               duration={300}
-              cardLogo={"📸"}
+              cardLogo={<MdWorkHistory/>}
               cardText={"Pengalaman"}
               subCardText={" > 1 Tahun"}
             />
             <Experience
               duration={450}
-              cardLogo={"📸"}
+              cardLogo={<FaProjectDiagram />}
               cardText={"Project"}
               subCardText={"3+ Project"}
             />
             <Experience
               duration={600}
-              cardLogo={"📸"}
+              cardLogo={<BiSupport/>}
               cardText={"Support"}
               subCardText={"Online 24/7"}
             />
