@@ -48,7 +48,7 @@ const About = () => {
               duration={450}
               cardLogo={<FaProjectDiagram />}
               cardText={"Project"}
-              subCardText={"3+ Project"}
+              subCardText={"5+ Project"}
             />
             <Experience
               duration={600}

@@ -4,6 +4,7 @@ import Haphap from "/images/haphap-games.jpeg";
 import Quranku from "/images/quranku.jpeg";
 import RumahImpian from "/images/rumah-impian.jpeg";
 import TesTahfidz from "/images/tes-tahfidz.jpeg";
+import WebXC from "/images/web-xc.png";
 import { BsArrowRightShort } from "react-icons/bs";
 
 const data = [
@@ -52,42 +53,26 @@ const data = [
     },
     link: "https://tes-tahfidz-pink.vercel.app/",
   },
+  {
+    id: 5,
+    name: "Web Kelas XC",
+    image: {
+      backgroundImage: `url(${WebXC})`,
+      backgroundSize: "400px 240px",
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "center"
+    },
+    link: "https://web-xc.vercel.app/",
+  }
+
 ];
 
-// const data = [
-//   {
-//     id: 1,
-//     name: "Quran-Ku",
-//     image: <Haphap/>,
-//     link: "https://aftlah.github.io/Quran-Ku/",
-    
-//   },
-//   {
-//     id: 2,
-//     name: "Hap Hap Games",
-//     image: <Haphap/>,
-//     link: "https://hap-hap-games.vercel.app/",
-//   },
-//   {
-//     id: 3,
-//     name: "Rumah Impian",
-//     image: <Haphap/>,
-//     link: "https://rumah-impian-peach.vercel.app/",
-//   },
-//   {
-//     id: 4,
-//     name: "Tes Tahfidz",
-//     image: <Haphap/>,
-//     link: "https://tes-tahfidz-pink.vercel.app/",
-//   },
-// ];
 
 const Project = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
     setProjects(data);
-    // console.log(projects);
   }, []);
 
   
@@ -107,7 +92,7 @@ const Project = () => {
           </AosCom>
         </div>
 
-        <div className="flex flex-col flex-wrap md:justify-start lg:justify-center  items-start w-full sm:w-[85%]  py-4 mx-auto mt-9 gap-x-3  gap-7 md:flex-row md:w-[100%] xl:w-[80%]  xl:gap-14">
+        <div className="flex flex-col flex-wrap md:justify-start lg:justify-center  items-start w-full sm:w-[85%]  py-4 mx-auto mt-9 gap-x-3  gap-5 md:flex-row md:w-[100%] xl:w-[80%]  xl:gap-x-3 xl:gap-y-7">
           {projects.map((project, i) => (
             <div
               key={i}

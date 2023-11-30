@@ -4,6 +4,7 @@ import { DiCss3 } from "react-icons/di";
 import { SiJavascript } from "react-icons/si";
 import { BiLogoTailwindCss } from "react-icons/bi";
 import { BiLogoReact } from "react-icons/bi";
+import { TbBrandNextjs } from "react-icons/tb";
 
 const Skill = () => {
   return (
@@ -18,6 +19,9 @@ const Skill = () => {
         </li>
         <li className="w-20 h-auto ">
           <SiJavascript className="ml-1 text-3xl md:text-4xl" />
+        </li>
+        <li className="w-20 h-auto">
+          <TbBrandNextjs className="text-4xl md:text-5xl" />
         </li>
       </div>
 
@@ -42,6 +46,7 @@ const Skill = () => {
             />
           </svg>
         </li>
+       
       </div>
       </>    
   );
