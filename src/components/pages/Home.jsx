@@ -1,4 +1,3 @@
-import React from "react";
 import AosCom from "../../../utils/AosCom";
 import Aos from "aos";
 import Sosmed from "../fragment/Sosmed";
@@ -43,8 +42,8 @@ const Home = () => {
               </p>
             </AosCom>
             <AosCom dataAos={"fade-up"} dataAosDelay={200}>
-              <button className="w-32 h-12 italic font-medium text-white bg-black rounded-full md:text-lg">
-                <a href="https://www.instagram.com/aftlah/" target="_blank">
+              <button className="w-32 h-11 italic font-medium pb-1 text-white bg-black rounded-full md:text-lg">
+                <a href="https://www.instagram.com/aftlah/" target="_blank" rel="noreferrer" >
                   Contact Me
                 </a>
               </button>

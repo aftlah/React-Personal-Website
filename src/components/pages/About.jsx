@@ -1,4 +1,3 @@
-import React from "react";
 import AosCom from "../../../utils/AosCom";
 import imageKu from "/images/gambar1.jpeg";
 import Experience from "../fragment/Experience";
@@ -60,10 +59,11 @@ const About = () => {
 
           <div className="max-w-lg mx-auto text-center md:max-w-md md:text-left my-7 lg:ml-4">
             <p className="font-semibold text-slate-500 text-[0.9rem]">
-              I' am a Web Developer from Tangerang, Indonesia. I specialised in
+              
+              I&apos;am a Web Developer from Tangerang, Indonesia. I specialised in
               Front-End Web Developer adn Web Design. Im always striving to grow
-              and learn somethingg new and i don't take my self too seriously.
-              I'm passionate about helping startup grow, improve their customer
+              and learn somethingg new and i don&apos;t take my self too seriously.
+              I&apos;m passionate about helping startup grow, improve their customer
               experience.
             </p>
           </div>

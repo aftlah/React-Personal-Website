@@ -1,72 +1,44 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import AosCom from "../../../utils/AosCom";
-import Haphap from "/images/haphap-games.jpeg";
-import Quranku from "/images/quranku.jpeg";
-import RumahImpian from "/images/rumah-impian.jpeg";
-import TesTahfidz from "/images/tes-tahfidz.jpeg";
-import WebXC from "/images/web-xc.png";
 import { BsArrowRightShort } from "react-icons/bs";
 
 const data = [
   {
     id: 1,
     name: "Quran-Ku",
-    image: {
-      backgroundImage: `url(${Quranku})`,
-      backgroundSize: "cover",
-      backgroundRepeat: "no-repeat",
-      backgroundPosition: "center"
-    },
+    image : "/images/quranku.jpeg",
+    //   backgroundImage: `url(${Quranku})`,
+    //   backgroundSize: "cover",
+    //   backgroundRepeat: "no-repeat",
+    //   backgroundPosition: "center",
+    // },
     link: "https://aftlah.github.io/Quran-Ku/",
-    
   },
   {
     id: 2,
     name: "Hap Hap Games",
-    image: {
-      backgroundImage: `url(${Haphap})`,
-      backgroundSize: "cover",
-      backgroundRepeat: "no-repeat",
-      backgroundPosition: "center"
-    },
+    image : "/images/haphap-games.jpeg",
     link: "https://hap-hap-games.vercel.app/",
   },
   {
     id: 3,
     name: "Rumah Impian",
-    image:{
-      backgroundImage: `url(${RumahImpian})`,
-      backgroundSize: "cover",
-      backgroundRepeat: "no-repeat",
-      backgroundPosition: "center"
-    },
+    image : "/images/rumah-impian.jpeg",
     link: "https://rumah-impian-peach.vercel.app/",
   },
   {
     id: 4,
     name: "Tes Tahfidz",
-    image:  {
-      backgroundImage: `url(${TesTahfidz})`,
-      backgroundSize: "cover",
-      backgroundRepeat: "no-repeat",
-      backgroundPosition: "center"
-    },
+    image : "/images/tes-tahfidz.jpeg",
     link: "https://tes-tahfidz-pink.vercel.app/",
   },
   {
     id: 5,
     name: "Web Kelas XC",
-    image: {
-      backgroundImage: `url(${WebXC})`,
-      backgroundSize: "400px 240px",
-      backgroundRepeat: "no-repeat",
-      backgroundPosition: "center"
-    },
+    image : "/images/web-xc.png",
     link: "https://web-xc.vercel.app/",
-  }
-
+  },
 ];
-
 
 const Project = () => {
   const [projects, setProjects] = useState([]);
@@ -75,15 +47,13 @@ const Project = () => {
     setProjects(data);
   }, []);
 
-  
-
   return (
     <div>
       <section
         id="project"
         className="container w-full h-auto p-4 mx-auto mt-20 md:p-0 lg:p-4"
       >
-        <div className="w-[90%] mx-auto text-center ">
+        <div className="w-[90%] mx-auto text-center">
           <AosCom dataAos="fade" dataAosOnce="true">
             <h1 className="text-2xl font-bold text-slate-900">Project</h1>
             <p className="mt-3 text-sm text-slate-600">
@@ -107,7 +77,7 @@ const Project = () => {
                 <div className="max-w-md bg-white h-full  rounded-2xl md:w-[22rem] lg:w-[28rem] mx-auto md:mx-5 lg:mx-auto py-1 border ">
                   <div>
                     <div className="flex w-[95%] sm:w-[90%] h-52 sm:h-56 mx-auto mt-5 rounded-2xl md:h-48 lg:h-56">
-                      <div className="w-full rounded-xl" style={project.image}></div>
+                      <img src={project.image} className="w-full rounded-xl object-fill" />
                     </div>
                     <div className=" w-[88%] mx-auto mt-2">
                       <h1 className="font-bold text-md text-slate-700">
@@ -118,6 +88,7 @@ const Project = () => {
                           href={project.link}
                           target="_blank"
                           className="text-sm font-medium"
+                          rel="noreferrer"
                         >
                           Demo
                           <BsArrowRightShort className="inline-block ml-1 text-xl font-extrabold transition-all ease-linear group-hover:translate-x-1" />
@@ -129,6 +100,9 @@ const Project = () => {
               </AosCom>
             </div>
           ))}
+
+    
+
         </div>
       </section>
     </div>
