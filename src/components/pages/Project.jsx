@@ -76,7 +76,7 @@ const Project = () => {
               >
                 <div className="max-w-md bg-white h-full  rounded-2xl md:w-[22rem] lg:w-[28rem] mx-auto md:mx-5 lg:mx-auto py-1 border ">
                   <div>
-                    <div className="flex w-[95%] sm:w-[90%] h-52 sm:h-56 mx-auto mt-5 rounded-2xl md:h-48 lg:h-56">
+                    <div className="flex w-[95%] sm:w-[90%] h-52 sm:h-56 mx-auto mt-2 sm:mt-4 rounded-2xl md:h-48 lg:h-56">
                       <img src={project.image} className="w-full rounded-xl object-fill" />
                     </div>
                     <div className=" w-[88%] mx-auto mt-2">

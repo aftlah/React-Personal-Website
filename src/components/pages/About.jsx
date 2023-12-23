@@ -40,8 +40,8 @@ const About = () => {
             <Experience
               duration={300}
               cardLogo={<MdWorkHistory/>}
-              cardText={"Pengalaman"}
-              subCardText={" > 1 Tahun"}
+              cardText={"Experience"}
+              subCardText={" 1 Year"}
             />
             <Experience
               duration={450}
@@ -61,7 +61,7 @@ const About = () => {
             <p className="font-semibold text-slate-500 text-[0.9rem]">
               
               I&apos;am a Web Developer from Tangerang, Indonesia. I specialised in
-              Front-End Web Developer adn Web Design. Im always striving to grow
+              Front-End Web Developer and Web Design. Im always striving to grow
               and learn somethingg new and i don&apos;t take my self too seriously.
               I&apos;m passionate about helping startup grow, improve their customer
               experience.
