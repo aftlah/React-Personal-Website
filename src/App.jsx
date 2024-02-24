@@ -1,9 +1,10 @@
-import React from "react";
+
 import Navbar from "./components/pages/Navbar";
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 import Skills from "./components/pages/Skills";
-import Project from "./components/pages/Project";
+import { Project } from "./components/pages/Project";
+// import Project from "./components/pages/Project";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Home />
       <About />
       <Skills />
-      <Project />
+      <Project/>
     </div>
   );
 }
