@@ -37,8 +37,10 @@ const Home = () => {
           <div>
             <AosCom dataAos={"fade-up"} dataAosDelay={50}>
               <p className="max-w-sm mb-6 text-slate-500 md:text-md lg:text-lg">
-                Seorang Mahasiswa yang ingin menjadi 
-                Fullstack Web Developer
+                {/* Seorang Mahasiswa yang ingin menjadi 
+                Fullstack Web Developer */}
+                I&apos;m a Fullstack Web Developer at Universitas Budi Luhur
+                
               </p>
             </AosCom>
             <AosCom dataAos={"fade-up"} dataAosDelay={200}>

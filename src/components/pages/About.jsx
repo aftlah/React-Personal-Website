@@ -4,6 +4,8 @@ import Experience from "../fragment/Experience";
 import { FaProjectDiagram } from "react-icons/fa";
 import { BiSupport } from "react-icons/bi";
 import { MdWorkHistory } from "react-icons/md"
+
+
 const About = () => {
   const StyleImg = {
     backgroundImage: `url(${imageKu})`,
@@ -58,7 +60,7 @@ const About = () => {
           </div>
 
           <div className="max-w-lg mx-auto text-center md:max-w-md md:text-left my-7 lg:ml-4">
-            <p className="font-semibold text-slate-500 text-[0.9rem]">
+            <p className="font-semibold text-slate-500 text-[0.9rem] lg:text-[1.1rem]">
 
               {/* I&apos;am a Web Developer from Tangerang, Indonesia. I specialised in
               Front-End Web Developer and Web Design. Im always striving to grow
@@ -66,7 +68,7 @@ const About = () => {
               I&apos;m passionate about helping startup grow, improve their customer
               experience. */}
 
-              I&apos;m a Back-end Developer at Universitas Budi Luhur. I specialised in
+              I&apos;m a Fullstack Web Developer at Universitas Budi Luhur. I specialised in
               Front-End Web Developer and Web Design. Im always striving to grow
               and learn somethingg new and i don&apos;t take my self too seriously.
               I&apos;m passionate about helping startup grow, improve their customer

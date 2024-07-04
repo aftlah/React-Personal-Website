@@ -6,7 +6,7 @@ const Type = () => {
 
    useEffect(() => {
       const typed = new Typed(typedRef.current, {
-         strings:["Mahasiswa","Fullstack Web Developer", "Front-end Developer", "Web Designer"],
+         strings:["Mahasiswa","Fullstack Web Developer", "Web Designer", "Cyber Security Enthusiast"],
          typeSpeed: 50,
          backSpeed: 50,
          backDelay: 400,
