@@ -45,7 +45,7 @@ const Home = () => {
             </AosCom>
             <AosCom dataAos={"fade-up"} dataAosDelay={200}>
               <button className="w-32 pb-1 italic font-medium text-white bg-black rounded-full h-11 md:text-lg">
-                <a href="https://www.instagram.com/aftlah/" target="_blank" rel="noreferrer" >
+                <a href="https://www.linkedin.com/in/altaf-fattah-amanullah-10b852266/" target="_blank" rel="noreferrer" >
                   Contact Me
                 </a>
               </button>

@@ -1,6 +1,3 @@
-import React from "react";
-
-
 const Sosmed = () => {
     const arrSosmed = [
       {
@@ -23,7 +20,7 @@ const Sosmed = () => {
 
   return (
       <div className='flex h-[40%] flex-col lg:ml-20 xl:ml-36 items-start justify-start md:justify-evenly gap-y-8'>
-          <a href={arrSosmed[0].link} target="_blank">
+          <a href={arrSosmed[0].link} target="_blank" rel="noreferrer">
             <svg
               className="fill-current w-[1.30rem] md:w-6"
               role="img"
@@ -34,7 +31,7 @@ const Sosmed = () => {
               <path d={arrSosmed[0].path} />
             </svg>
           </a>
-          <a href={arrSosmed[1].link} target="_blank">
+          <a href={arrSosmed[1].link} target="_blank" rel="noreferrer">
             <svg
               className="fill-current w-[1.30rem] md:w-6"
               role="img"
@@ -45,7 +42,7 @@ const Sosmed = () => {
               <path d={arrSosmed[1].path} />
             </svg>
           </a>
-          <a href={arrSosmed[2].link} target="_blank">
+          <a href={arrSosmed[2].link} target="_blank" rel="noreferrer">
             <svg
               className="fill-current w-[1.30rem] md:w-6"
               role="img"
