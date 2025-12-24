@@ -1,39 +1,46 @@
 import AosCom from "../../../utils/AosCom";
-import Skill from "../fragment/Skill";
+import SkillItem from "../fragment/Skill";
+import skillsData from "../../json/skills.json";
 
 const Skills = () => {
   return (
-    <div>
-      <section
-        id="skills"
-        className="container w-full h-auto p-4 mx-auto mt-20 "
-      >
-        <div className="w-[90%] mx-auto text-center ">
-          <AosCom dataAos="fade" dataAosDelay={true}>
-            <h1 className="text-2xl font-bold text-slate-900">Skills</h1>
-            <p className="mt-3 text-sm text-slate-600">Keterampilan saya</p>
+    <section id="skills" className="py-20 bg-slate-50/50">
+      <div className="container px-6 mx-auto">
+        <div className="mb-16 text-center">
+          <AosCom dataAos="fade-up" dataAosDuration={600}>
+            <h2 className="text-3xl font-bold tracking-tight text-slate-900 md:text-4xl font-heading">
+              Skills & Tools
+            </h2>
+            <p className="max-w-2xl mx-auto mt-4 text-slate-600">
+              The technologies and tools I use to bring ideas to life.
+            </p>
           </AosCom>
         </div>
 
-        <AosCom dataAos={"fade-down"} dataAosOnce={true}>
-          <div className="flex flex-col items-center justify-center w-full h-auto px-5 mt-10 gap-y-10 md:gap-x-14 md:flex-row md:px-0">
-            <div className=" w-10/12 h-auto rounded-3xl md:w-[24rem] bg-white border py-3  border-slate-200">
-              <div className="w-full my-4 text-center">
-                {/* <h1 className="font-semibold text-md text-slate-800">
-                  Front-End Skill
-                </h1> */}
-              </div>
-
-              <div className="w-11/12 mx-auto ml-5 ">
-                <ul className="flex justify-center py-3 list-none list-inside md:justify-evenly ">
-                  <Skill/>
-                </ul>
+        <div className="grid gap-12">
+          {skillsData.map((category, catIndex) => (
+            <div key={catIndex}>
+              <AosCom dataAos="fade-up" dataAosDuration={600} dataAosDelay={catIndex * 100}>
+                <h3 className="mb-8 text-xl font-semibold text-center text-slate-800 md:text-left md:ml-4">
+                  {category.category}
+                </h3>
+              </AosCom>
+              
+              <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+                {category.skills.map((skill, index) => (
+                  <SkillItem
+                    key={index}
+                    name={skill.name}
+                    icon={skill.icon}
+                    index={index}
+                  />
+                ))}
               </div>
             </div>
-          </div>
-        </AosCom>
-      </section>
-    </div>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 };
 
