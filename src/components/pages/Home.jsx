@@ -2,55 +2,65 @@ import AosCom from "../../../utils/AosCom";
 import Aos from "aos";
 import Sosmed from "../fragment/Sosmed";
 import Type from "../../../utils/Typed";
+import { useEffect } from "react";
 
 const Home = () => {
-  Aos.init();
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
-    <section id="home" className="container p-4  w-full h-[37rem] mx-auto   ">
-      <div className="flex flex-row items-center justify-center w-full h-full gap-10 md:justify-start">
-        <AosCom dataAosDuration={500} dataAos={"fade-right"}>
-          <Sosmed />
-        </AosCom>
+    <section id="home" className="relative flex items-center justify-center min-h-screen pt-20 pb-32 overflow-hidden">
+      {/* Background Blobs */}
+      <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-purple-200/40 rounded-full blur-[100px] -z-10 animate-pulse" />
+      <div className="absolute bottom-[-10%] left-[-10%] w-[500px] h-[500px] bg-blue-200/40 rounded-full blur-[100px] -z-10 animate-pulse delay-1000" />
 
-        <div className="xl:ml-36 lg:ml-20 md:ml-16">
-          <AosCom dataAos={"fade-down"} dataAosDuration={500}>
-            {/* Ukuran Mobile */}
-            <h1 className="text-4xl font-bold md:text-5xl lg:text-6xl lg:hidden">
-              Hallo Aku, Altaf <span className="text-3xl md:text-5xl">🖐️</span>
-            </h1>
-
-            {/* Ukurang Desktop */}
-            <h1 className="hidden ml-1 italic font-semibold md:text-5xl lg:text-2xl lg:block text-slate-600">
-              Hallo Aku,
-            </h1>
-            <div className="hidden ml-0 text-5xl font-bold lg:block text-slate-900 bg-blue">
-              Altaf Fattah Amanullah 🖐️
-            </div>
-          </AosCom>
-
-          <AosCom dataAos={"fade-left"} dataAosDuration={500}>
-            <div className="flex items-center h-5 my-3 md:h-9 gap-x-2 md:gap-x-4 md:my-4 lg:my-6">
-              <div className="h-[0.1rem] w-9  md:w-12 bg-slate-500"></div>
-              <Type />
-            </div>
-          </AosCom>
-          <div>
-            <AosCom dataAos={"fade-up"} dataAosDelay={50}>
-              <p className="max-w-sm mb-6 text-slate-500 md:text-md lg:text-lg">
-                {/* Seorang Mahasiswa yang ingin menjadi 
-                Fullstack Web Developer */}
-                I&apos;m a Fullstack Web Developer at Universitas Budi Luhur
-                
-              </p>
+      <div className="container px-6 mx-auto">
+        <div className="flex flex-col items-center justify-center text-center">
+            <AosCom dataAos="fade-up" dataAosDuration={800}>
+                <div className="inline-block px-4 py-1.5 mb-6 text-sm font-medium text-slate-900 bg-white border border-slate-200 rounded-full shadow-sm">
+                    👋 Welcome to my portfolio
+                </div>
             </AosCom>
-            <AosCom dataAos={"fade-up"} dataAosDelay={200}>
-              <button className="w-32 pb-1 italic font-medium text-white bg-black rounded-full h-11 md:text-lg">
-                <a href="https://www.linkedin.com/in/altaf-fattah-amanullah-10b852266/" target="_blank" rel="noreferrer" >
-                  Contact Me
-                </a>
-              </button>
+
+            <AosCom dataAos="fade-up" dataAosDuration={800} dataAosDelay={100}>
+                <h1 className="text-5xl font-bold tracking-tight text-slate-900 md:text-7xl lg:text-8xl font-heading">
+                    Altaf Fattah
+                    <span className="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+                        Amanullah
+                    </span>
+                </h1>
             </AosCom>
-          </div>
+
+            <AosCom dataAos="fade-up" dataAosDuration={800} dataAosDelay={200}>
+                <div className="flex items-center justify-center h-12 mt-6 text-2xl font-medium text-slate-600 md:text-3xl">
+                    <span className="mr-3">I am a</span>
+                    <Type />
+                </div>
+            </AosCom>
+
+            <AosCom dataAos="fade-up" dataAosDuration={800} dataAosDelay={300}>
+                <p className="max-w-2xl mx-auto mt-6 text-lg leading-relaxed text-slate-600 md:text-xl">
+                     I&apos;m a Fullstack Web Developer at Universitas Budi Luhur. I build accessible, pixel-perfect, performant, and web experiences.
+                </p>
+            </AosCom>
+
+            <AosCom dataAos="fade-up" dataAosDuration={800} dataAosDelay={400}>
+                <div className="flex flex-col items-center gap-4 mt-10 sm:flex-row">
+                    <a href="#project" className="px-8 py-3.5 text-lg font-medium text-white transition-all bg-slate-900 rounded-full hover:bg-slate-800 hover:scale-105 hover:shadow-xl hover:shadow-slate-900/20">
+                        View My Work
+                    </a>
+                     <a href="https://www.linkedin.com/in/altaf-fattah-amanullah-10b852266/" target="_blank" rel="noreferrer" className="px-8 py-3.5 text-lg font-medium text-slate-700 transition-all bg-white border border-slate-200 rounded-full hover:border-slate-400 hover:text-slate-900 hover:scale-105">
+                        Contact Me
+                    </a>
+                </div>
+            </AosCom>
+            
+             <AosCom dataAos="fade-up" dataAosDuration={800} dataAosDelay={500}>
+                <div className="mt-12">
+                    <Sosmed />
+                </div>
+            </AosCom>
         </div>
       </div>
     </section>

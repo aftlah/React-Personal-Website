@@ -1,4 +1,3 @@
-import React from 'react'
 import AosCom from '../../../utils/AosCom'
 
 const Experience = ({duration,cardLogo,cardText,subCardText}) => {

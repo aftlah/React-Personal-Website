@@ -1,19 +1,19 @@
-
 import Navbar from "./components/pages/Navbar";
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 import Skills from "./components/pages/Skills";
 import { Project } from "./components/pages/Project";
-// import Project from "./components/pages/Project";
 
 function App() {
   return (
-    <div className="relative overflow-x-hidden bg-slate-50">
+    <div className="relative overflow-x-hidden min-h-screen">
       <Navbar />
-      <Home />
-      <About />
-      <Skills />
-      <Project/>
+      <main className="pb-32 pt-10">
+        <Home />
+        <About />
+        <Skills />
+        <Project/>
+      </main>
     </div>
   );
 }
