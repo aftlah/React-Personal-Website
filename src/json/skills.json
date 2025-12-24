@@ -36,6 +36,11 @@
         "name": "Bootstrap",
         "icon": "bootstrap",
         "color": "#7952b3"
+      },
+      {
+        "name": "Vue.js",
+        "icon": "vuejs",
+        "color": "#4FC08D"
       }
     ]
   },
@@ -58,14 +63,44 @@
         "color": "#F05032"
       },
       {
-        "name": "Figma",
-        "icon": "figma",
-        "color": "#F24E1E"
-      },
-      {
         "name": "Vite",
         "icon": "vite",
         "color": "#646CFF"
+      },
+      {
+        "name": "Node.js",
+        "icon": "nodejs",
+        "color": "#339933"
+      },
+      {
+        "name": "Express.js",
+        "icon": "express",
+        "color": "#000000"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "typescript",
+        "color": "#3178C6"
+      },
+      {
+        "name": "Go",
+        "icon": "go",
+        "color": "#00ADD8"
+      },
+      {
+        "name": "MySQL",
+        "icon": "mysql",
+        "color": "#4479A1"
+      },
+      {
+        "name": "Oracle",
+        "icon": "oracle",
+        "color": "#F80000"
+      },
+      {
+        "name": "PostgreSQL",
+        "icon": "postgresql",
+        "color": "#4169E1"
       }
     ]
   }

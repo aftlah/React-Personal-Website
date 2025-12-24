@@ -1,6 +1,7 @@
 import Navbar from "./components/pages/Navbar";
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
+import Experience from "./components/pages/Experience";
 import Skills from "./components/pages/Skills";
 import { Project } from "./components/pages/Project";
 import WelcomeAnimation from "./components/ui/WelcomeAnimation";
@@ -13,6 +14,7 @@ function App() {
       <main className="pb-32 pt-10">
         <Home />
         <About />
+        <Experience />
         <Skills />
         <Project/>
       </main>

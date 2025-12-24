@@ -14,11 +14,13 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="container w-full h-auto p-4 mx-auto mt-20 ">
+    <section id="about" className="container w-full h-auto px-6 py-20 mx-auto">
       <AosCom dataAos="fade" dataAosOnce="true">
         <div className="w-[90%] mx-auto text-center ">
-          <h1 className="text-2xl font-bold text-slate-900">About me</h1>
-          <p className="mt-3 text-sm text-slate-600">Tetang Saya</p>
+          <h2 className="text-3xl font-bold tracking-tight text-slate-900 md:text-4xl font-heading">
+            About Me
+          </h2>
+          <p className="mt-4 text-slate-600">Tetang Saya</p>
         </div>
       </AosCom>
 

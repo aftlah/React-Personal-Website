@@ -7,7 +7,7 @@ const Skills = () => {
     <section id="skills" className="py-20 bg-slate-50/50">
       <div className="container px-6 mx-auto">
         <div className="mb-16 text-center">
-          <AosCom dataAos="fade-up" dataAosDuration={600}>
+          <AosCom dataAos="fade-up" dataAosDuration={600} dataAosOnce="true">
             <h2 className="text-3xl font-bold tracking-tight text-slate-900 md:text-4xl font-heading">
               Skills & Tools
             </h2>
@@ -20,7 +20,7 @@ const Skills = () => {
         <div className="grid gap-8">
           {skillsData.map((category, catIndex) => (
             <div key={catIndex}>
-              <AosCom dataAos="fade-up" dataAosDuration={600} dataAosDelay={catIndex * 100}>
+              <AosCom dataAos="fade-up" dataAosDuration={600} dataAosDelay={catIndex * 100} dataAosOnce="true">
                 <h3 className="mb-4 text-lg font-semibold text-center text-slate-800 md:text-left md:ml-4">
                   {category.category}
                 </h3>

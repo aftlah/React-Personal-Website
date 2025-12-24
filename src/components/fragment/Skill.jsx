@@ -7,10 +7,22 @@ import {
   FaPhp,
   FaLaravel,
   FaGitAlt,
-  FaFigma,
   FaBootstrap,
+  FaVuejs,
 } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs, SiVite } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiVite,
+  SiNodedotjs,
+  SiExpress,
+  SiTypescript,
+  SiGo,
+  SiMysql,
+  SiOracle,
+  SiPostgresql,
+  // SiVuejs,
+} from "react-icons/si";
 
 const iconMap = {
   html: <FaHtml5 size={32} className="text-[#E44D26]" />,
@@ -22,9 +34,17 @@ const iconMap = {
   php: <FaPhp size={32} className="text-[#777BB4]" />,
   laravel: <FaLaravel size={32} className="text-[#FF2D20]" />,
   git: <FaGitAlt size={32} className="text-[#F05032]" />,
-  figma: <FaFigma size={32} className="text-[#F24E1E]" />,
   vite: <SiVite size={32} className="text-[#646CFF]" />,
   bootstrap: <FaBootstrap size={32} className="text-[#7952b3]" />,
+  nodejs: <SiNodedotjs size={32} className="text-[#339933]" />,
+  express: <SiExpress size={32} className="text-black" />,
+  typescript: <SiTypescript size={32} className="text-[#3178C6]" />,
+  go: <SiGo size={32} className="text-[#00ADD8]" />,
+  mysql: <SiMysql size={32} className="text-[#4479A1]" />,
+  oracle: <SiOracle size={32} className="text-[#F80000]" />,
+  postgresql: <SiPostgresql size={32} className="text-[#4169E1]" />,
+  // vuejs: <SiVuejs size={32} className="text-[#4FC08D]" />,
+  vuejs: <FaVuejs size={32} className="text-[#4FC08D]" />,
 };
 
 const SkillItem = ({ name, icon, index }) => {

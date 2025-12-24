@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "Web Developer",
+        "company": "Budiluhur IT Club",
+        "location": "Jakarta, Indonesia",
+        "period": "2023 - Present",
+        "description": "Mengambangkan dan memelihara website komunitas Budiluhur IT Club, dan mengerjakan berbagai proyek web seperti e-commerce, blog, dan website institusi.",
+        "skills": ["React", "Laravel", "MySQL", "Tailwind CSS"]
+    },
+    {
+        "id": 2,
+        "title": "Software Engineer",
+        "company": "Direktoran Teknologi Informasi Universitas Budi Luhur",
+        "location": "Jakarta, Indonesia",
+        "period": "2023 - Present",
+        "description": "Mengembangkan dan memelihara sistem informasi akademik universitas, seperti sistem pendaftaran mahasiswa dan kebutuhan lainnya",
+        "skills": ["PHP", "Laravel", "Bootstrap", "jQuery"]
+    }
+]
