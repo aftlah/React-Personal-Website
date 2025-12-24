@@ -3,10 +3,12 @@ import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 import Skills from "./components/pages/Skills";
 import { Project } from "./components/pages/Project";
+import WelcomeAnimation from "./components/ui/WelcomeAnimation";
 
 function App() {
   return (
     <div className="relative overflow-x-hidden min-h-screen">
+      <WelcomeAnimation />
       <Navbar />
       <main className="pb-32 pt-10">
         <Home />

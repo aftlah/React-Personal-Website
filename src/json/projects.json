@@ -1,42 +1,37 @@
-  [ 
-    {
-      "id": "1",
-      "name": "Quran-Ku",
-      "image": "/src/assets/images/quranku.jpeg",
-      "link": "https://aftlah.github.io/Quran-Ku/",
-      "dataAos": "fade",
-      "dataAosDelay": 50,
-      "dataAosOnce": "true",
-      "dataAosDuration": 300
-    },
-    {
-      "id": "2",
-      "name": "Hap Hap Games",
-      "image": "/src/assets/images/haphap-games.jpeg",
-      "link": "https://hap-hap-games.vercel.app/",
-      "dataAos": "fade",
-      "dataAosDelay": 50,
-      "dataAosOnce": "true",
-      "dataAosDuration": 300
-    },
-    {
-      "id": "3",
-      "name": "Rumah Impian",
-      "image": "/src/assets/images/rumah-impian.jpeg",
-      "link": "https://rumah-impian-peach.vercel.app/",
-      "dataAos": "fade",
-      "dataAosDelay": 50,
-      "dataAosOnce": "true",
-      "dataAosDuration": 300
-    },
-    {
-      "id": "4",
-      "name": "Tes Tahfidz",
-      "image": "/src/assets/images/tes-tahfidz.jpeg",
-      "link": "https://tes-tahfidz-pink.vercel.app/",
-      "dataAos": "fade",
-      "dataAosDelay": 50,
-      "dataAosOnce": "true",
-      "dataAosDuration": 300
-    }
-  ]
+[
+  {
+    "id": 1,
+    "name": "Quran-Ku",
+    "image": "/images/quranku.jpeg",
+    "link": "https://aftlah.github.io/Quran-Ku/",
+    "tech": ["HTML", "CSS", "JavaScript", "API"]
+  },
+  {
+    "id": 2,
+    "name": "Hap Hap Games",
+    "image": "/images/haphap-games.jpeg",
+    "link": "https://hap-hap-games.vercel.app/",
+    "tech": ["React", "Tailwind", "Vercel"]
+  },
+  {
+    "id": 3,
+    "name": "Rumah Impian",
+    "image": "/images/rumah-impian.jpeg",
+    "link": "https://rumah-impian-peach.vercel.app/",
+    "tech": ["Next.js", "Tailwind", "Framer Motion"]
+  },
+  {
+    "id": 4,
+    "name": "Tes Tahfidz",
+    "image": "/images/tes-tahfidz.jpeg",
+    "link": "https://tes-tahfidz-pink.vercel.app/",
+    "tech": ["React", "API", "CSS"]
+  },
+  {
+    "id": 5,
+    "name": "Web Kelas XC",
+    "image": "/images/web-xc.png",
+    "link": "https://web-xc.vercel.app/",
+    "tech": ["HTML", "CSS", "JavaScript"]
+  }
+]

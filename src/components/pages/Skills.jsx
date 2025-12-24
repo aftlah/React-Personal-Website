@@ -17,16 +17,16 @@ const Skills = () => {
           </AosCom>
         </div>
 
-        <div className="grid gap-12">
+        <div className="grid gap-8">
           {skillsData.map((category, catIndex) => (
             <div key={catIndex}>
               <AosCom dataAos="fade-up" dataAosDuration={600} dataAosDelay={catIndex * 100}>
-                <h3 className="mb-8 text-xl font-semibold text-center text-slate-800 md:text-left md:ml-4">
+                <h3 className="mb-4 text-lg font-semibold text-center text-slate-800 md:text-left md:ml-4">
                   {category.category}
                 </h3>
               </AosCom>
               
-              <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+              <div className="grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-8">
                 {category.skills.map((skill, index) => (
                   <SkillItem
                     key={index}
