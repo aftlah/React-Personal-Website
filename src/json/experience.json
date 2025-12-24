@@ -14,7 +14,7 @@
         "company": "Direktoran Teknologi Informasi Universitas Budi Luhur",
         "location": "Jakarta, Indonesia",
         "period": "2023 - Present",
-        "description": "Mengembangkan dan memelihara sistem informasi akademik universitas, seperti sistem pendaftaran mahasiswa dan kebutuhan lainnya",
+        "description": "Mengembangkan dan memelihara sistem informasi akademik universitas, seperti student budiluhur, sistem pendaftaran mahasiswa dan kebutuhan lainnya",
         "skills": ["PHP", "Laravel", "Bootstrap", "jQuery"]
     }
 ]
