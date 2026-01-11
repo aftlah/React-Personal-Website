@@ -5,18 +5,24 @@ import Experience from "./components/pages/Experience";
 import Skills from "./components/pages/Skills";
 import { Project } from "./components/pages/Project";
 import WelcomeAnimation from "./components/ui/WelcomeAnimation";
+import CustomCursor from "./components/ui/CustomCursor";
+import ScrollProgress from "./components/ui/ScrollProgress";
+import FloatingElements from "./components/ui/FloatingElements";
 
 function App() {
   return (
-    <div className="relative overflow-x-hidden min-h-screen">
+    <div className="relative overflow-x-hidden min-h-screen cursor-none">
+      <CustomCursor />
+      <ScrollProgress />
+      <FloatingElements />
       <WelcomeAnimation />
       <Navbar />
-      <main className="pb-32 pt-10">
+      <main className="pb-32 pt-10 relative z-10">
         <Home />
         <About />
         <Experience />
         <Skills />
-        <Project/>
+        <Project />
       </main>
     </div>
   );
