@@ -3,6 +3,7 @@ import { motion, useMotionValue, useSpring } from "framer-motion";
 
 const CustomCursor = () => {
     const [isHovered, setIsHovered] = useState(false);
+    const [isEnabled, setIsEnabled] = useState(true);
     const cursorX = useMotionValue(-100);
     const cursorY = useMotionValue(-100);
 
@@ -11,6 +12,13 @@ const CustomCursor = () => {
     const cursorYSpring = useSpring(cursorY, springConfig);
 
     useEffect(() => {
+        const isCoarse = window.matchMedia && window.matchMedia("(pointer: coarse)").matches;
+        const isTouch = "ontouchstart" in window || navigator.maxTouchPoints > 0;
+        if (isCoarse || isTouch) {
+            setIsEnabled(false);
+            return;
+        }
+
         const moveCursor = (e) => {
             cursorX.set(e.clientX);
             cursorY.set(e.clientY);
@@ -38,6 +46,8 @@ const CustomCursor = () => {
             window.removeEventListener("mouseover", handleMouseOver);
         };
     }, [cursorX, cursorY]);
+
+    if (!isEnabled) return null;
 
     return (
         <>

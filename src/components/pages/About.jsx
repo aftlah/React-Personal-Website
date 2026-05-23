@@ -16,6 +16,7 @@ const About = () => {
     backgroundImage: `url(${imageKu})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
   };
 
   return (
@@ -48,7 +49,7 @@ const About = () => {
           </div>
 
           <div className="w-full flex flex-col h-auto mt-10 md:mt-5 md:w-[27rem] lg:my-auto">
-            <div className="flex justify-center w-full mx-auto gap-x-3 gap-y-2">
+            <div className="flex flex-wrap justify-center w-full mx-auto gap-x-3 gap-y-3">
               <motion.div whileHover={{ y: -4 }} transition={{ type: "spring", stiffness: 320 }}>
                 <Experience duration={300} cardLogo={<MdWorkHistory />} cardText={"Experience"} subCardText={"1+ Year"} />
               </motion.div>

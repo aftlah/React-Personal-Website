@@ -26,7 +26,7 @@ const Home = () => {
           <AosCom dataAos="fade-up" dataAosDuration={800} dataAosOnce="true">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 mb-6 rounded-full border border-cyan-500/25 bg-black/30 backdrop-blur-md">
               <span className="font-mono text-xs text-cyan-200/90">{"<dev/>"}</span>
-              <span className="text-xs text-slate-300">engineer portfolio</span>
+              <span className="text-xs text-slate-300">portfolio</span>
             </div>
           </AosCom>
 
