@@ -1,15 +1,26 @@
 @tailwind base;
 
+:root {
+  --bg: #030712;
+  --surface: rgba(15, 23, 42, 0.55);
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --cyan: #00ffff;
+  --violet: #8b5cf6;
+  --grid: rgba(0, 255, 255, 0.08);
+}
+
 html {
   scroll-behavior: smooth;
-  font-family: "Inter", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 body {
-  background-color: #f8fafc;
-  background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
-  background-size: 32px 32px;
-  color: #0f172a;
+  background-color: var(--bg);
+  background-image: radial-gradient(var(--grid) 1px, transparent 1px);
+  background-size: 28px 28px;
+  color: var(--text);
+  overflow-x: hidden;
 }
 
 h1,
@@ -18,51 +29,187 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 @tailwind components;
 @tailwind utilities;
 
-/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: rgba(2, 6, 23, 0.8);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 5px;
+  background: linear-gradient(180deg, rgba(0, 255, 255, 0.65), rgba(139, 92, 246, 0.65));
+  border-radius: 999px;
+  box-shadow: 0 0 14px rgba(0, 255, 255, 0.25);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
+  box-shadow: 0 0 18px rgba(0, 255, 255, 0.35);
 }
 
-/* Custom Animations */
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
+@keyframes flicker {
+  0%,
+  100% {
+    opacity: 1;
   }
   50% {
-    background-position: 100% 50%;
+    opacity: 0.78;
+  }
+}
+
+@keyframes scanline {
+  0% {
+    transform: translateY(-100%);
   }
   100% {
-    background-position: 0% 50%;
+    transform: translateY(120%);
   }
 }
 
-.animate-gradient {
-  animation: gradient 6s ease infinite;
+@keyframes matrix-rain {
+  0% {
+    background-position: 0 0, 0 0;
+  }
+  100% {
+    background-position: 0 600px, 0 1200px;
+  }
 }
 
-.bg-300\% {
-  background-size: 300% 300%;
+.neon-text {
+  color: var(--cyan);
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.35), 0 0 26px rgba(139, 92, 246, 0.18);
+}
+
+.neon-border {
+  border: 1px solid rgba(0, 255, 255, 0.22);
+  box-shadow: 0 0 0 1px rgba(139, 92, 246, 0.14) inset, 0 0 18px rgba(0, 255, 255, 0.08);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 22px rgba(0, 255, 255, 0.22);
+}
+
+.glow-violet {
+  box-shadow: 0 0 22px rgba(139, 92, 246, 0.22);
+}
+
+.scanlines {
+  position: relative;
+}
+
+.scanlines::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.03),
+    rgba(255, 255, 255, 0.03) 1px,
+    transparent 1px,
+    transparent 4px
+  );
+  pointer-events: none;
+  mix-blend-mode: overlay;
+  opacity: 0.5;
+}
+
+.scanlines::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 140px;
+  top: 0;
+  background: linear-gradient(to bottom, rgba(0, 255, 255, 0.22), transparent);
+  opacity: 0.2;
+  animation: scanline 2.8s linear infinite;
+  pointer-events: none;
+}
+
+.matrix-bg {
+  position: relative;
+}
+
+.matrix-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(to bottom, rgba(0, 255, 255, 0.11), transparent 55%),
+    repeating-linear-gradient(
+      to bottom,
+      rgba(0, 255, 255, 0.07),
+      rgba(0, 255, 255, 0.07) 1px,
+      transparent 1px,
+      transparent 8px
+    );
+  opacity: 0.35;
+  pointer-events: none;
+  animation: matrix-rain 10s linear infinite;
+}
+
+.glitch {
+  position: relative;
+  display: inline-block;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  opacity: 0.75;
+  pointer-events: none;
+}
+
+.glitch::before {
+  transform: translate(2px, -1px);
+  color: var(--cyan);
+  animation: flicker 1.7s infinite;
+}
+
+.glitch::after {
+  transform: translate(-2px, 1px);
+  color: var(--violet);
+  animation: flicker 2.1s infinite;
 }
 
 .perspective-1000 {
   perspective: 1000px;
+}
+
+.cursor-crosshair {
+  position: relative;
+}
+
+.cursor-crosshair::before,
+.cursor-crosshair::after {
+  content: "";
+  position: absolute;
+  background: rgba(0, 255, 255, 0.85);
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.35);
+}
+
+.cursor-crosshair::before {
+  width: 26px;
+  height: 1px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cursor-crosshair::after {
+  width: 1px;
+  height: 26px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }

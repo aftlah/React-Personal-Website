@@ -30,7 +30,7 @@
       {
         "name": "Next.js",
         "icon": "nextjs",
-        "color": "#000000"
+        "color": "#FFFFFF"
       },
       {
         "name": "Bootstrap",
@@ -75,7 +75,7 @@
       {
         "name": "Express.js",
         "icon": "express",
-        "color": "#000000"
+        "color": "#FFFFFF"
       },
       {
         "name": "TypeScript",

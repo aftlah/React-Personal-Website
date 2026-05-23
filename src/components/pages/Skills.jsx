@@ -4,15 +4,15 @@ import skillsData from "../../json/skills.json";
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-20 bg-slate-50/50">
+    <section id="skills" className="py-20 bg-slate-950/30">
       <div className="container px-6 mx-auto">
         <div className="mb-16 text-center">
           <AosCom dataAos="fade-up" dataAosDuration={600} dataAosOnce="true">
-            <h2 className="text-3xl font-bold tracking-tight text-slate-900 md:text-4xl font-heading">
-              Skills & Tools
+            <h2 className="text-3xl font-bold tracking-tight text-slate-100 md:text-4xl font-heading">
+              <span className="font-mono text-cyan-300/90">{"// "}</span>Skills & Tools
             </h2>
-            <p className="max-w-2xl mx-auto mt-4 text-slate-600">
-              The technologies and tools I use to bring ideas to life.
+            <p className="max-w-2xl mx-auto mt-4 text-slate-400">
+              Stack I use to ship products — from UI to backend and data.
             </p>
           </AosCom>
         </div>
@@ -21,8 +21,8 @@ const Skills = () => {
           {skillsData.map((category, catIndex) => (
             <div key={catIndex}>
               <AosCom dataAos="fade-up" dataAosDuration={600} dataAosDelay={catIndex * 100} dataAosOnce="true">
-                <h3 className="mb-4 text-lg font-semibold text-center text-slate-800 md:text-left md:ml-4">
-                  {category.category}
+                <h3 className="mb-4 text-base font-semibold text-center text-slate-200 md:text-left md:ml-4 font-mono">
+                  {"// "}{category.category}
                 </h3>
               </AosCom>
               
@@ -32,6 +32,7 @@ const Skills = () => {
                     key={index}
                     name={skill.name}
                     icon={skill.icon}
+                    color={skill.color}
                     index={index}
                   />
                 ))}

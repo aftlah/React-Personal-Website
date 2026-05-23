@@ -32,7 +32,7 @@ const Sosmed = ({ className = "" }) => {
           href={item.link}
           target="_blank"
           rel="noreferrer"
-          className="text-slate-500 hover:text-slate-900 transition-colors duration-300 hover:scale-110 transform"
+          className="text-slate-400 hover:text-cyan-300 transition-all duration-300 hover:scale-110 transform hover:drop-shadow-[0_0_14px_rgba(0,255,255,0.35)]"
           title={item.title}
         >
           {item.icon}

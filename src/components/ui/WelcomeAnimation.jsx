@@ -1,19 +1,61 @@
-import { motion, AnimatePresence } from "framer-motion";
-import { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { useEffect, useMemo, useState } from "react";
 
 const WelcomeAnimation = () => {
   const [isVisible, setIsVisible] = useState(true);
-  const name = "Altaf Fattah";
-  const letters = name.split("");
+  const [typed, setTyped] = useState("");
+  const [lineIndex, setLineIndex] = useState(0);
+
+  const script = useMemo(
+    () => [
+      { status: "OK", text: "boot sequence: portfolio_os v1.0.0" },
+      { status: "OK", text: "detecting environment: web" },
+      { status: "LOADING", text: "loading modules: ui, motion, aos" },
+      { status: "OK", text: "config: neon_theme enabled" },
+      { status: "READY", text: "launching interface..." },
+    ],
+    []
+  );
 
   useEffect(() => {
-    // Hide animation after 2.8 seconds
-    const timer = setTimeout(() => {
+    const already = sessionStorage.getItem("bootShown") === "1";
+    if (already) {
       setIsVisible(false);
-    }, 2800);
-
-    return () => clearTimeout(timer);
+      return;
+    }
+    sessionStorage.setItem("bootShown", "1");
   }, []);
+
+  useEffect(() => {
+    if (!isVisible) return;
+    if (lineIndex >= script.length) {
+      const t = setTimeout(() => setIsVisible(false), 700);
+      return () => clearTimeout(t);
+    }
+
+    const full = script[lineIndex].text;
+    let i = 0;
+    setTyped("");
+
+    const tick = () => {
+      i += 1;
+      setTyped(full.slice(0, i));
+      if (i < full.length) {
+        timer = window.setTimeout(tick, 18);
+      } else {
+        timer = window.setTimeout(() => setLineIndex((v) => v + 1), 260);
+      }
+    };
+
+    let timer = window.setTimeout(tick, 120);
+    return () => window.clearTimeout(timer);
+  }, [isVisible, lineIndex, script]);
+
+  const badgeClass = (status) => {
+    if (status === "OK") return "text-emerald-300 border-emerald-400/30";
+    if (status === "READY") return "text-cyan-300 border-cyan-400/30";
+    return "text-violet-300 border-violet-400/30";
+  };
 
   return (
     <AnimatePresence>
@@ -21,115 +63,60 @@ const WelcomeAnimation = () => {
         <motion.div
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.6, ease: "easeInOut" }}
-          className="fixed inset-0 z-[9999] flex items-center justify-center bg-[#f8fafc]"
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+          className="fixed inset-0 z-[9999] flex items-center justify-center bg-[#030712] matrix-bg"
         >
-          {/* Subtle grid pattern overlay - matching website background */}
-          <div
-            className="absolute inset-0 opacity-100"
-            style={{
-              backgroundImage: 'radial-gradient(#cbd5e1 1px, transparent 1px)',
-              backgroundSize: '32px 32px'
-            }}
-          />
+          <div className="absolute inset-0 opacity-90 scanlines" />
+          <div className="relative w-[92%] max-w-3xl">
+            <div className="rounded-2xl border border-cyan-500/20 bg-slate-950/70 backdrop-blur-xl shadow-2xl shadow-cyan-500/10 overflow-hidden">
+              <div className="flex items-center justify-between px-4 py-3 border-b border-cyan-500/10">
+                <div className="flex items-center gap-2">
+                  <span className="w-2.5 h-2.5 rounded-full bg-rose-500/80" />
+                  <span className="w-2.5 h-2.5 rounded-full bg-amber-400/80" />
+                  <span className="w-2.5 h-2.5 rounded-full bg-emerald-400/80" />
+                </div>
+                <div className="font-mono text-xs tracking-[0.3em] text-slate-400">
+                  ALTAF_BOOT
+                </div>
+              </div>
 
-          {/* Animated gradient blobs - matching website style */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 0.4, scale: 1 }}
-            transition={{ duration: 1.2, ease: "easeOut" }}
-            className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-purple-200 rounded-full blur-[100px] -z-10"
-          />
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 0.4, scale: 1 }}
-            transition={{ duration: 1.2, delay: 0.2, ease: "easeOut" }}
-            className="absolute bottom-[-10%] left-[-10%] w-[500px] h-[500px] bg-blue-200 rounded-full blur-[100px] -z-10"
-          />
+              <div className="p-5 font-mono text-sm md:text-base">
+                <div className="text-slate-400">
+                  <span className="neon-text">{"<AF/>"}</span> initializing...
+                </div>
+                <div className="mt-4 space-y-2">
+                  {script.slice(0, Math.min(lineIndex, script.length)).map((l, idx) => (
+                    <div key={idx} className="flex gap-3">
+                      <span
+                        className={`px-2 py-0.5 rounded-md border text-[11px] leading-5 ${badgeClass(
+                          l.status
+                        )}`}
+                      >
+                        [{l.status}]
+                      </span>
+                      <span className="text-slate-200">{l.text}</span>
+                    </div>
+                  ))}
+                  {lineIndex < script.length && (
+                    <div className="flex gap-3">
+                      <span
+                        className={`px-2 py-0.5 rounded-md border text-[11px] leading-5 ${badgeClass(
+                          script[lineIndex].status
+                        )}`}
+                      >
+                        [{script[lineIndex].status}]
+                      </span>
+                      <span className="text-slate-200">
+                        {typed}
+                        <span className="inline-block w-2 h-4 ml-1 bg-cyan-300/80 align-[-2px]" />
+                      </span>
+                    </div>
+                  )}
+                </div>
 
-          {/* Elegant corner accents */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 0.2, scale: 1 }}
-            transition={{ duration: 1, ease: "easeOut" }}
-            className="absolute top-20 left-20 w-32 h-32 border-l-2 border-t-2 border-slate-300"
-          />
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 0.2, scale: 1 }}
-            transition={{ duration: 1, ease: "easeOut" }}
-            className="absolute bottom-20 right-20 w-32 h-32 border-r-2 border-b-2 border-slate-300"
-          />
-
-          {/* Main content container */}
-          <div className="relative text-center px-8 z-10">
-            {/* Animated name with letter-by-letter reveal */}
-            <div className="mb-8">
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
-                className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight font-heading"
-              >
-                {letters.map((letter, index) => (
-                  <motion.span
-                    key={index}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{
-                      duration: 0.4,
-                      delay: 0.3 + index * 0.04,
-                      ease: [0.22, 1, 0.36, 1],
-                    }}
-                    className="inline-block text-slate-900"
-                  >
-                    {letter === " " ? "\u00A0" : letter}
-                  </motion.span>
-                ))}
-              </motion.div>
+                <div className="mt-6 text-slate-500">initializing runtime...</div>
+              </div>
             </div>
-
-            {/* Elegant divider with gradient accent */}
-            <div className="flex items-center justify-center gap-4 mb-8">
-              <motion.div
-                initial={{ scaleX: 0 }}
-                animate={{ scaleX: 1 }}
-                transition={{ delay: 0.8, duration: 0.8, ease: "easeInOut" }}
-                className="h-px w-16 bg-gradient-to-r from-transparent via-slate-300 to-slate-300"
-                style={{ transformOrigin: "right" }}
-              />
-              <motion.div
-                initial={{ scale: 0, rotate: -180 }}
-                animate={{ scale: 1, rotate: 0 }}
-                transition={{ delay: 1, duration: 0.6, ease: "easeOut" }}
-                className="w-2 h-2 rounded-full bg-gradient-to-r from-blue-600 to-purple-600"
-              />
-              <motion.div
-                initial={{ scaleX: 0 }}
-                animate={{ scaleX: 1 }}
-                transition={{ delay: 0.8, duration: 0.8, ease: "easeInOut" }}
-                className="h-px w-16 bg-gradient-to-l from-transparent via-slate-300 to-slate-300"
-                style={{ transformOrigin: "left" }}
-              />
-            </div>
-
-            {/* Portfolio text */}
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.3, duration: 0.6, ease: "easeOut" }}
-              className="text-sm md:text-base tracking-[0.3em] text-slate-600 uppercase font-medium"
-            >
-              Portfolio
-            </motion.div>
-
-            {/* Gradient accent line below */}
-            <motion.div
-              initial={{ scaleX: 0, opacity: 0 }}
-              animate={{ scaleX: 1, opacity: 1 }}
-              transition={{ delay: 1.6, duration: 0.7, ease: "easeOut" }}
-              className="h-0.5 w-24 mx-auto mt-6 rounded-full bg-gradient-to-r from-blue-600 to-purple-600"
-            />
           </div>
         </motion.div>
       )}

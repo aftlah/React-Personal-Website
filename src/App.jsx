@@ -17,7 +17,7 @@ function App() {
       <FloatingElements />
       <WelcomeAnimation />
       <Navbar />
-      <main className="pb-32 pt-10 relative z-10">
+      <main className="pb-28 pt-24 relative z-10">
         <Home />
         <About />
         <Experience />

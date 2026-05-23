@@ -4,15 +4,16 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        heading: ['Poppins', 'sans-serif'],
+        sans: ["Space Grotesk", "sans-serif"],
+        heading: ["Space Grotesk", "sans-serif"],
+        mono: ["JetBrains Mono", "ui-monospace", "SFMono-Regular", "Menlo", "monospace"],
       },
       colors: {
-        primary: "#0f172a", // Slate 900
-        secondary: "#334155", // Slate 700
-        accent: "#2563eb", // Blue 600
-        background: "#f8fafc", // Slate 50
-      }
+        neonCyan: "#00FFFF",
+        neonViolet: "#8B5CF6",
+        ink: "#030712",
+        surface: "#0b1220",
+      },
     },
   },
   plugins: [],
