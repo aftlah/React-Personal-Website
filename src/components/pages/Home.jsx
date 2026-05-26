@@ -26,7 +26,7 @@ const Home = () => {
           <AosCom dataAos="fade-up" dataAosDuration={800} dataAosOnce="true">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 mb-6 rounded-full border border-cyan-500/25 bg-black/30 backdrop-blur-md">
               <span className="font-mono text-xs text-cyan-200/90">{"<dev/>"}</span>
-              <span className="text-xs text-slate-300">portfolio</span>
+              <span className="text-xs text-slate-300">...</span>
             </div>
           </AosCom>
 
@@ -39,7 +39,7 @@ const Home = () => {
                 Altaf Fattah
               </span>
               <span className="block mt-2 font-mono text-base md:text-lg text-slate-400 tracking-wide">
-                altaf.fattah@portfolio:~$
+                aftlah@dev-port:~$
               </span>
             </h1>
           </AosCom>
