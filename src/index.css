@@ -136,6 +136,28 @@ h6 {
   position: relative;
 }
 
+.boot-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100dvh;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #030712;
+}
+
+.boot-overlay__card {
+  position: relative;
+  z-index: 10;
+  width: min(92vw, 42rem);
+  padding: 0 1rem;
+}
+
 .matrix-bg::before {
   content: "";
   position: absolute;

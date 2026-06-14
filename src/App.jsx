@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Navbar from "./components/pages/Navbar";
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
@@ -10,20 +11,26 @@ import ScrollProgress from "./components/ui/ScrollProgress";
 import FloatingElements from "./components/ui/FloatingElements";
 
 function App() {
+  const [bootDone, setBootDone] = useState(false);
+
   return (
     <div className="relative overflow-x-hidden min-h-screen cursor-none">
-      <CustomCursor />
-      <ScrollProgress />
-      <FloatingElements />
-      <WelcomeAnimation />
-      <Navbar />
-      <main className="pb-28 pt-24 relative z-10">
-        <Home />
-        <About />
-        <Experience />
-        <Skills />
-        <Project />
-      </main>
+      <WelcomeAnimation onComplete={() => setBootDone(true)} />
+      {bootDone && (
+        <>
+          <CustomCursor />
+          <ScrollProgress />
+          <FloatingElements />
+          <Navbar />
+          <main className="pb-28 pt-24 relative z-10">
+            <Home />
+            <About />
+            <Experience />
+            <Skills />
+            <Project />
+          </main>
+        </>
+      )}
     </div>
   );
 }

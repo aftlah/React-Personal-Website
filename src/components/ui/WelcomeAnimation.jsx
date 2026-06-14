@@ -1,7 +1,8 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useMemo, useState } from "react";
+import { createPortal } from "react-dom";
 
-const WelcomeAnimation = () => {
+const WelcomeAnimation = ({ onComplete }) => {
   const [isVisible, setIsVisible] = useState(true);
   const [typed, setTyped] = useState("");
   const [lineIndex, setLineIndex] = useState(0);
@@ -18,13 +19,18 @@ const WelcomeAnimation = () => {
   );
 
   useEffect(() => {
-    const already = sessionStorage.getItem("bootShown") === "1";
-    if (already) {
-      setIsVisible(false);
+    if (!isVisible) {
+      onComplete?.();
       return;
     }
-    sessionStorage.setItem("bootShown", "1");
-  }, []);
+
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [isVisible, onComplete]);
 
   useEffect(() => {
     if (!isVisible) return;
@@ -57,17 +63,24 @@ const WelcomeAnimation = () => {
     return "text-violet-300 border-violet-400/30";
   };
 
-  return (
+  const overlay = (
     <AnimatePresence>
       {isVisible && (
         <motion.div
+          key="boot-overlay"
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
-          className="fixed inset-0 z-[9999] flex items-center justify-center bg-[#030712] matrix-bg"
+          className="boot-overlay"
         >
-          <div className="absolute inset-0 opacity-90 scanlines" />
-          <div className="relative w-[92%] max-w-3xl">
+          <div className="absolute inset-0 matrix-bg pointer-events-none" />
+          <div className="absolute inset-0 opacity-90 scanlines pointer-events-none" />
+          <motion.div
+            initial={{ opacity: 0, scale: 0.96 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.45, ease: "easeOut" }}
+            className="boot-overlay__card"
+          >
             <div className="rounded-2xl border border-cyan-500/20 bg-slate-950/70 backdrop-blur-xl shadow-2xl shadow-cyan-500/10 overflow-hidden">
               <div className="flex items-center justify-between px-4 py-3 border-b border-cyan-500/10">
                 <div className="flex items-center gap-2">
@@ -117,11 +130,13 @@ const WelcomeAnimation = () => {
                 <div className="mt-6 text-slate-500">initializing runtime...</div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </motion.div>
       )}
     </AnimatePresence>
   );
+
+  return createPortal(overlay, document.body);
 };
 
 export default WelcomeAnimation;
